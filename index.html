@@ -1,36 +1,60 @@
-<html> 
-  <head>
-    <title>Skin Guide</title> 
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+    <title>Подробный гайд</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="noto-sans-sc">
+    <header>
+        <h1>Гайд: Рип текстур в CS:GO</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#chapter1">Глава 1: Установка софта</a></li>
+            <li><a href="#chapter2">Глава 2: Настройка программ</a></li>
+            <li><a href="#chapter3">Глава 3: Экспорт текстур</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="chapter1">
+            <h2>Глава первая. Установка необходимых программ.</h2>
+            <p>Список всех программ:</p>
+            <ol>
+                <li><a href="https://7launcher.com/?lang=en" target="_blank">CS:GO</a> отдельный шрифт под ссылки</li>
+                <li><a href="https://nemstools.github.io/pages/GCFScape-Download.html" target="_blank">GCFScape</a> (Обязательно установи рантаймы(скрин прикрепить))</li>
+                <li><a href="https://code.google.com/archive/p/texmod/downloads" target="_blank">TexMod (uMod)</a> (Скачиваем "uMod_alpha_v2_r49.zip", распаковываем его в любое удобное место(например раб. стол))</li>
+                <li><a href="https://github.com/Sky-rym/VTFEdit-Reloaded/releases" target="_blank">VTFEdit Reloaded</a> (либо Vtex)</li>
+            </ol>
+        </section>
 
-  <body> 
-    <h1>Гайд на рип скинов из ксго</h1>
-Переписать, делая гайд максимально подробным и для профи(без легкого способа, а писать нужно с поиском айди в items_game.txt и т.п)<br/>
-Сделать мини оглавления на каждую главу(ступень, шаг) гайда(типа 1 скачка софта, его первичная настройка, 2 сам процесс рипа, 3 процесс импорта в кссо и работа с втф/вмт файлами)<br/>
-<h1>Глава первая. Установка необходимых программ.</h1>
-Список всех программ:<br/>
-1) CS:GO - https://7launcher.com/?lang=en<br/>
-2) GCFScape - https://nemstools.github.io/pages/GCFScape-Download.html (Обязательно установи рантаймы(скрин прикрепить))<br/>
-3) TexMod(aka uMod) - https://code.google.com/archive/p/texmod/downloads (Скачиваем "uMod_alpha_v2_r49.zip", распаковываем его в любое удобное место(например раб. стол))<br/>
-4) VTFEdit Reloaded (либо Vtex) - https://github.com/Sky-rym/VTFEdit-Reloaded/releases<br/>
-<h1>Глава вторая. Настройка программ.</h1>
-В папке, куда ты распаковал uMod, найди d3d9.dll, скопируй её в папку bin, куда ты установил CS:GO (Допустим, ты установил CS:GO на рабочий стол по пути "C:/Users/MyUserName/Desktop/CS:GO 7launcher", тогда тебе нужно скопировать d3d9.dll в папку bin по пути "C:/Users/MyUserName/Desktop/CS:GO 7launcher/bin").<br/>
-Потом ты запускаешь CS:GO. uMod должен автоматически подхватить её, в результате чего должна появиться соответствующая плашка в uMod'е. Описать процесс настройки юмода здесь, кнопка Update. Потом закрыть ксго и заново открыть ее, темплейт должен подхватиться, если нет то написать как автоматом подхватывать его, ждешь загрузки главного меню в ксго.<br/>
-После этого шага есть 2 варианта развития событий(хайдеры, жмешь на них и открывается первый способ или второй):<br/>
-1) Экспортировать(рипать) текстуры скинов из CS:GO Workshop Workbench, не заходя на карту.<br/>
-2) Рипать текстуры скинов, добавляя их в инвентарь через программу RevEmu Inventory Creator (https://drive.google.com/file/d/1h3RoCudgl07Ga4yD1ShRRldvPJCm0tYf) с заходом на карту.<br/>
-У каждого варианта есть свои плюсы и минусы, а именно:<br/>
-1) + Более быстрый вариант экспорта с гибкой настройкой износа и прочих аспектов. - Нет возможности выбрать конкретный числовой паттерн (условно, 661 на ak47 поверхностная закалка), придется вручную на глаз двигать слайдеры. - Также, этот вариант может не подойти, если вы хотите рипать сгенерированные иконки ножей и перчаток.<br/>
-2) - Чуть менее быстрый вариант с ограниченной настройкой. + Есть возможность выбрать конкретный числовой паттерн для любого скина. + Генерация иконок для добавленных ножей и перчаток.<br/>
-Потом описать в этих хидерах вкладышах суть способов подробно.<br/>
-Способ 1. CS:GO Workshop Workbench.<br/>
-Открываешь https://stash.clash.gg.<br/>
-Способ 2. RevEmu Inventory Creator.<br/>
-Потом скачиваешь VTFEdit(ссылку на скачку, гайд как юзать его в конце после рипа).
-Скачиваешь TexMod(uMod) (ссылку на код.гугл на скачку и доп ссылку на исходный код), настраиваешь его(расписать как настроить, .тга формат вся хуйня).<br/>
-Запускаешь юмод, d3d9.dll в бин ксго, запускаешь ксго, настраиваешь юмод, перезапускаешь ксго, должна появиться плашка в юмоде с ксго настроенная.<br/>
-2. Потом тебе нужно найти ссылку на осмотр скина, который тебе нужен и нажать на нее (как вариант, использовать https://csfloat.com/db, либо https://csgostash.com, либо торговую площадку стима https://steamcommunity.com/market/search?appid=730 (оставить 1 ссылку, сделать пункт с фиксом некоторых шагов, типа что делать, если сайт не работает или чето еще, и туда пихнуть ссылки альтернативные)). Выскочит окошко с предложением открыть эту ссылку в приложении Steam, соглашаешься и в CS:GO появится возможность его осмотреть (переписать эту хуйню с ссылками на осмотр).<br/>
-Листаешь биндами в юмоде до текстуры(оружие должно стать зеленым, скриншот), потом также с экспой(должно оружие посветлеть), нормаль(хз как описать, оружие или блеск на нем должны стать плоскими или потемнеть, типа того). Закрываешь ксго, тексмод(юмод)<br/>
-3. Берешь полученные<br/>
-  </body>
+        <section id="chapter2">
+            <h2>Глава вторая. Настройка программ.</h2>
+            <p>Распакуй <code>d3d9.dll</code> из uMod и скопируй в папку <code>bin</code> с CS:GO.</p>
+            <p>Запусти CS:GO, настрой uMod, перезапусти CS:GO.</p>
+        </section>
+
+        <section id="chapter3">
+            <h2>Глава третья. Экспорт текстур.</h2>
+            <p>Выбери способ:</p>
+            <details>
+                <summary>Способ 1: Workshop Workbench</summary>
+                <p>Инструкция: открой <a href="https://stash.clash.gg" target="_blank">stash.clash.gg</a>.</p>
+            </details>
+            <details>
+                <summary>Способ 2: RevEmu Inventory Creator</summary>
+                <p>Инструкция: скачай <a href="https://drive.google.com/file/d/1h3RoCudgl07Ga4yD1ShRRldvPJCm0tYf" target="_blank">RevEmu Inventory Creator</a>.</p>
+            </details>
+        </section>
+    </main>
+    <!-- <footer>
+        <p>© 2024 Гайд по рипу текстур CS:GO</p>
+    </footer> -->
+</div>
+</body>
 </html>
