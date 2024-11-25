@@ -42,11 +42,11 @@
                     <ol>
                         <li><a href="https://7launcher.com/?lang=en" target="_blank">CS:GO</a>. отдельный шрифт для ссылок</li>
                         <li><a href="https://nemstools.github.io/pages/GCFScape-Download.html" target="_blank">GCFScape</a>.
-                            <a href="./images/gcfscape.png" target="_blank" style="text-decoration: none;">Screenshot</a></li>
+                            <a href="./images/gcfscape_installation.png" target="_blank" style="text-decoration: none">Screenshot</a></li>
                         <li><a href="https://code.google.com/archive/p/texmod/downloads" target="_blank">TexMod(uMod)</a>.
-                            <a href="./images/umod.png" target="_blank" style="text-decoration: none;">Screenshot</a></li>
+                            <a href="./images/umod.png" target="_blank" style="text-decoration: none">Screenshot</a></li>
                         <li><a href="https://github.com/Sky-rym/VTFEdit-Reloaded/releases" target="_blank">VTFEdit Reloaded</a>.
-                            <a href="./images/vtfedit_reloaded.png" target="_blank" style="text-decoration: none;">Screenshot</a></li>
+                            <a href="./images/vtfedit_reloaded.png" target="_blank" style="text-decoration: none">Screenshot</a></li>
                     </ol>
                 </section>
 
@@ -85,22 +85,21 @@
                     <details>
                         <summary>Способ 1: Workshop Workbench</summary>
                         <ul>
-                            <li style="color: #00ff00;">Более быстрый вариант экспорта с гибкой настройкой износа и
+                            <li style="color: #00ff00">Более быстрый вариант экспорта с гибкой настройкой износа и
                                 прочих
                                 свойств.</li>
-                            <li style="color: #ff0000;">Отсутствует возможность выбрать конкретный числовой паттерн.
+                            <li style="color: #ff0000">Отсутствует возможность выбрать конкретный числовой паттерн.
                             </li>
-                            <li style="color: #ff0000;">Отсутствует возможность экспорта скинов на перчатки.</li>
-                            <li style="color: #ff0000;">Отсутствует возможность экспорта сгенерированных игрой иконок
-                                VGUI
-                                ножей и перчаток из инвентаря.</li>
+                            <li style="color: #ff0000">Отсутствует возможность экспорта скинов на перчатки.</li>
+                            <li style="color: #ff0000">Отсутствует возможность экспорта сгенерированных игрой
+                                VGUI иконок ножей и перчаток из инвентаря.</li>
                         </ul>
                         <p>Инструкция:</p>
                         <ol>
                             <li>Открой <a href="https://stash.clash.gg" target="_blank">stash.clash.gg</a>.
                                 (Сайт заблокирован в РФ).</li>
                             <li>Найди нужный скин и скопируй цифровое значение его <code>Finish Catalog</code>.
-                                <a href="images/csgostash_id.png" target="_blank" style="text-decoration: none;">Screenshot</a></li>
+                                <a href="images/csgostash_id.png" target="_blank" style="text-decoration: none">Screenshot</a></li>
                             <li>Открой файл "<code>items_game.txt</code>" по пути
                                 "<code>КОРНЕВАЯ_ПАПКА_УСТАНОВКИ_CS:GO/csgo/scripts/items</code>"
                                 через любой текстовый редактор. (Допустим, ты установил <code>CS:GO</code>
@@ -111,10 +110,10 @@
                             <li>В "<code>items_game.txt</code>" найди скопированное числовое значение
                                 "<code>Finish Catalog:</code>".
                                 <a href="images/notepad_search.png" target="_blank"
-                                style="text-decoration: none;">Screenshot</a></li>
+                                style="text-decoration: none">Screenshot</a></li>
                             <li>Скопируй всё, что выделено на скриншоте.
                                 <a href="images/notepad_copy.png" target="_blank"
-                                style="text-decoration: none;">Screenshot</a></li>
+                                style="text-decoration: none">Screenshot</a></li>
                             <li>Открой корневую папку установки <code>CS:GO</code>.
                                 Создай в ней "<code>.txt</code>" файл с любым названием,
                                 например "<code>awp_gungnir.txt</code>". Открой его через любой текстовый редактор
@@ -122,20 +121,103 @@
                                 Замени найденный тобою ранее числовое значение "<code>Finish Catalog:</code>"
                                 на "<code>workshop_preview</code>". Сохрани "<code>awp_gungnir.txt</code>".
                                 <a href="images/notepad_replace.png" target="_blank"
-                                style="text-decoration: none;">Screenshot</a></li>
+                                style="text-decoration: none">Screenshot</a></li>
+                            <li>Запусти <code>CS:GO</code>, открой внутриигровую консоль и введи в неё
+                                <code>workshop_workbench</code>. Откроется окошко мастерской.
+                                <a href="images/workshop_workbench_start.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a></li>
+                            <li>В открывшемся окне найди надпись "<code>AK-47</code>"
+                                (<a href="images/workshop_workbench_weapon.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>), нажми на треугольник и выбери
+                                из выпадающего списка оружие, на которое применится желаемый скин
+                                (В данном случае это "<code>AWP</code>"). Найди кнопку "<code>Load</code>" и нажми на неё
+                                (<a href="images/workshop_workbench_load.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>). Выбери заранее сделанный
+                                "<code>awp_gungnir.txt</code>" и нажми кнопку "<code>Open</code>"
+                                (<a href="images/workshop_workbench_import_txt.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>). Если ты все сделал верно, то скин успешно
+                                применится на оружие (<a href="images/workshop_workbench_imported.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).
+                            </li>
+                            <li>Найди слайдер "<code>Wear</code>"
+                                (<a href="images/workshop_workbench_parameters.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>) и сдвинь его максимально влево
+                                (<a href="images/workshop_workbench_parameters2.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>). Таким образом можно настроить износ скина
+                                (В данном случае Factory New).
+                                    <details>
+                                        <summary style="color: #E09540">Важно.</summary>
+                                        <ol>
+                                        Иногда случается такое, что при импорте .txt некоторые параметры сбиваются
+                                            (Например "<code>wear_remap_min</code>" и "<code>wear_remap_max</code>",
+                                            которые отвечают за минимальное и максимальное состояние износа текстуры)
+                                            из-за того, что изначально в "<code>items_game.txt</code>" они не указаны.
+                                            В таком случае, нужно зайти на сайт
+                                            <a href="https://stash.clash.gg" target="_blank">stash.clash.gg</a>, откуда мы брали
+                                            значение "<code>Finish Catalog:</code>" и посмотреть там диапазон износа
+                                            (<a href="images/clash_float.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>), где число слева - "<code>wear_remap_min</code>",
+                                а число справа - "<code>wear_remap_max</code>".</ol>
+                                    </details>
+                            </li>
+                            <li>В программе "<code>uMod</code>" мы указывали клавиши, на которые будем "листать" текстуры.
+                                В моем случае "Back" - стрелочка влево, "Save" - стрелочка вверх, "Next" - стрелочка вправо.
+                                Таким образом, я жму стрелочку влево до тех пор, пока все оружие не станет зеленым
+                                (<a href="images/workshop_workbench_weapon_green.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>, но, у таких скинов как "<code>M4A1-S | Printstream</code>"
+                                оружие заместо зеленого может стать радужным
+                                (<a href="images/workshop_workbench_weapon_m4a1s_printstream.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>) и жму стрелочку вверх, чтобы сохранить текстуру скина.
+                                После я жму стрелочку влево/вправо до тех пор, пока все оружие неестественно посветлеет
+                                (<a href="images/workshop_workbench_weapon_white.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a> и жму стрелочку вверх чтобы сохранить и эту текстуру.
+                            </li>
+                            <li>В папке, которую мы указали в "<code>uMod</code>" (куда будут сохраняться текстуры)
+                                появилось 2 файла в формате .tga
+                                (<a href="images/ripped.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).
+                                Тот, что с приставкой "<code>csgo_W256_H256</code>" (иногда "<code>csgo_W512_H512</code>"
+                                либо "<code>csgo_W1024_H1024</code>") - текстура экспоненты, а тот, что с приставкой
+                                "<code>csgo_W2048_H2048</code>" - основная текстура скина. Но, помимо этого, нам нужно еще достать
+                                карту нормалей из файлов <code>CS:GO</code>. Сделать это можно, открыв корневую папку
+                                <code>CS:GO</code>, а в ней открыть папку "<code>csgo</code>"
+                                (Допустим, ты установил <code>CS:GO</code> на рабочий стол по пути
+                            <code>"C:/Users/MyUserName/Desktop/CS:GO_7L"</code>, тогда тебе нужно открыть папку
+                            "<code>csgo</code>" по пути <code>"C:/Users/MyUserName/Desktop/CS:GO_7L/csgo"</code>).
+                            Далее ты листаешь в самый низ папки "<code>csgo</code>", пока не увидишь "<code>pak01_dir.vpk</code>".
+                            Этот файл .vpk нужно открыть через "<code>GCFScape</code>"
+                            (<a href="images/gcfscape.jpg" target="_blank"
+                            style="text-decoration: none">Screenshot</a>). Далее в GCFScape нужно открыть папку "<code>paints</code>"
+                            по пути "<code>materials/models/weapons/customization/</code>", а в ней открыть папку, основываясь на стиле
+                            скина, который мы делали (стиль можно узнать, если открыть "<code>awp_gungnir.txt</code>",
+                            который мы создали ранее. Там будет строчка <code>"style" "9"</code>, наш стиль - 9).
+                            <details>
+                                <summary style="color: #E09540">Какую папку открывать в "<code>paints</code>"</summary>
+                                <ol>Ниже написаны цифры стиля и что они означают. Просто открой папку, которая указана напротив стиля.
+                                Например, если у нас стиль 7 (<code>"style" "7"</code>) в "<code>awp_gungnir.txt</code>", то мы открываем
+                                папку "<code>custom</code>", а если стиль 5 - "<code>anodized_multi</code>".<br>
+                                2 - hydrographic<br>
+                                3 - spray<br>
+                                5 - anodized_multi<br>
+                                6 - anodized_air<br>
+                                7 - custom<br>
+                                8 - antiqued<br>
+                                9 - gunsmith
+                                </ol>
+                            </details>
+                            </li>
                         </ol>
                     </details>
                     <details>
                         <summary>Способ 2: RevEmu Inventory Creator</summary>
                         <ul>
-                            <li style="color: #00ff00;">Присутствует возможность выбрать конкретный числовой паттерн.
+                            <li style="color: #00ff00">Присутствует возможность выбрать конкретный числовой паттерн.
                             </li>
-                            <li style="color: #00ff00;">Присутствует возможность экспорта сгенерированных игрой иконок
+                            <li style="color: #00ff00">Присутствует возможность экспорта сгенерированных игрой иконок
                                 VGUI
                                 ножей и перчаток из инвентаря.</li>
-                            <li style="color: #00ff00;">Присутствует возможность экспорта скинов на ножи и перчатки.
+                            <li style="color: #00ff00">Присутствует возможность экспорта скинов на ножи и перчатки.
                             </li>
-                            <li style="color: #ff0000;">Отсутствует возможность добавлять скины через ссылку для осмотра
+                            <li style="color: #ff0000">Отсутствует возможность добавлять скины через ссылку для осмотра
                                 (есть метод, как это исправить).</li>
                         </ul>
                         <p>Инструкция: скачай <a
