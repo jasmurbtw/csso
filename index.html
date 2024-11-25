@@ -8,7 +8,7 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="preload">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close,menu" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS:SO Guides</title>
     <link rel="stylesheet" href="styles.css">
@@ -16,7 +16,6 @@
 
 <body>
     <div class="noto-sans-sc">
-
         <div class="layout">
 
             <header>
@@ -26,6 +25,9 @@
             <nav class="sidebar">
                 <button id="toggle-sidebar" class="sidebar-toggle">
                     <span class="material-symbols-outlined">close</span>
+                </button>
+                <button id="toggle-sidebar" class="sidebar-toggle">
+                    <span class="material-symbols-outlined">menu</span>
                 </button>
                 <ul>
                     <li><a href="#chapter1">Глава 1: Установка программ.</a></li>
@@ -85,13 +87,13 @@
                     <details>
                         <summary>Способ 1: Workshop Workbench</summary>
                         <ul>
-                            <li style="color: #00ff00">Более быстрый вариант экспорта с гибкой настройкой износа и
+                            <li style="color: #03C03C">Более быстрый вариант экспорта с гибкой настройкой износа и
                                 прочих
                                 свойств.</li>
-                            <li style="color: #ff0000">Отсутствует возможность выбрать конкретный числовой паттерн.
+                            <li style="color: #BF4F51">Отсутствует возможность выбрать конкретный числовой паттерн.
                             </li>
-                            <li style="color: #ff0000">Отсутствует возможность экспорта скинов на перчатки.</li>
-                            <li style="color: #ff0000">Отсутствует возможность экспорта сгенерированных игрой
+                            <li style="color: #BF4F51">Отсутствует возможность экспорта скинов на перчатки.</li>
+                            <li style="color: #BF4F51">Отсутствует возможность экспорта сгенерированных игрой
                                 VGUI иконок ножей и перчаток из инвентаря.</li>
                         </ul>
                         <p>Инструкция:</p>
@@ -184,12 +186,18 @@
                             <code>"C:/Users/MyUserName/Desktop/CS:GO_7L"</code>, тогда тебе нужно открыть папку
                             "<code>csgo</code>" по пути <code>"C:/Users/MyUserName/Desktop/CS:GO_7L/csgo"</code>).
                             Далее ты листаешь в самый низ папки "<code>csgo</code>", пока не увидишь "<code>pak01_dir.vpk</code>".
-                            Этот файл .vpk нужно открыть через "<code>GCFScape</code>"
+                            Этот .vpk файл нужно открыть через "<code>GCFScape</code>"
                             (<a href="images/gcfscape.jpg" target="_blank"
                             style="text-decoration: none">Screenshot</a>). Далее в GCFScape нужно открыть папку "<code>paints</code>"
                             по пути "<code>materials/models/weapons/customization/</code>", а в ней открыть папку, основываясь на стиле
                             скина, который мы делали (стиль можно узнать, если открыть "<code>awp_gungnir.txt</code>",
-                            который мы создали ранее. Там будет строчка <code>"style" "9"</code>, наш стиль - 9).
+                            который мы создали ранее. Там будет строчка <code>"style" "9"</code>
+                            (<a href="images/notepad_style.jpg" target="_blank" style="text-decoration: none">Screenshot</a>),
+                            наш стиль - 9, значит мы открываем папку "<code>gunsmith</code>").
+                            Потом вновь открываем "<code>awp_gungnir.txt</code>" и ищем там строчку
+                            <code>"normal" "awp_gungnir_normal"</code>
+                            (<a href="images/notepad_normal.jpg" target="_blank" style="text-decoration: none">Screenshot</a>),
+                            это название файла, который нам надо найти и распаковать в папку, которую мы указали в "<code>uMod</code>".
                             <details>
                                 <summary style="color: #E09540">Какую папку открывать в "<code>paints</code>"</summary>
                                 <ol>Ниже написаны цифры стиля и что они означают. Просто открой папку, которая указана напротив стиля.
@@ -205,19 +213,134 @@
                                 </ol>
                             </details>
                             </li>
+                            <li>Открываем программу "<code>VTFEdit Reloaded</code>". Жмём кнопку импорта
+                                (<a href="images/vtfedit_import.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).
+                                Открывается диалог выбора файла для импорта, выбираем в нём текстуру с префиксом
+                                "<code>csgo_w256_h256</code>" ("<code>csgo_w512_h512</code>" либо "<code>csgo_W1024_H1024</code>"),
+                                жмём "<code>Open</code>". В "<code>VTFEdit Reloaded</code>" появится окошко с настройками импорта
+                                (<a href="images/vtfedit_import_options.jpg" target="_blank" style="text-decoration: none">Screenshot</a>),
+                                выставляем что нам нужно и жмём "<code>OK</code>". Жмём кнопку сохранения
+                                (<a href="images/vtfedit_save.jpg" target="_blank" style="text-decoration: none">Screenshot</a>)
+                                и сохраняем текстуру на рабочий стол с названием "<code>csgo_w256_h256</code>"
+                                ("<code>csgo_w512_h512</code>", если импортировали текстуру с префиксом "<code>csgo_w512_h512</code>"
+                                и "<code>csgo_w1024_h1024</code>", если импортировали текстуру с префиксом "<code>csgo_w1024_h1024</code>")
+                                Повторяем этот шаг для второй текстуры ("<code>csgo_w2048_h2048</code>"),
+                                сохранив её с именем "<code>csgo_w2048_h2048</code>".
+                            </li>
+                            <li>Открываем папку, куда установлена "<code>CS:SO</code>". В ней нам нужно открыть
+                                "<code>csso_pak_dir.vpk</code>" с помощью "<code>GCFScape</code>". В "<code>GCFScape</code>" нужно открыть
+                                папку "<code>v_models</code>" по пути "<code>materials/models/weapons</code>".
+                                <details>
+                                    <summary style="color: #E09540">Какая папка нам нужна в "<code>v_models</code>"</summary>
+                                    <ol>Выбор папки зависит от скина на оружие.<br>
+                                        <details>
+                                            <summary style="color: #E09540">Pistols: <code style="color: cyan">"materials/models/weapons/v_models"</code></summary>
+                                            <ol>
+                                                CZ75-Auto - "<code>pist_cz_75</code>"<br>
+                                                Desert Eagle - "<code>pist_deagle</code>"<br>
+                                                Dual Berettas - "<code>pist_elite</code>"<br>
+                                                Five-SeveN - "<code>pist_fiveseven</code>"<br>
+                                                Glock-18 - "<code>pist_glock18</code>"<br>
+                                                P2000 - "<code>pist_hkp2000</code>"<br>
+                                                P250 - "<code>pist_p250</code>"<br>
+                                                R8 Revolver - "<code>pist_revolver</code>"<br>
+                                                Tec-9 - "<code>pist_tec9</code>"<br>
+                                                USP-S - "<code>pist_usp</code>""
+                                            </ol>
+                                        </details>
+                                        <details>
+                                            <summary style="color: #E09540">SMGs: <code style="color: cyan">"materials/models/weapons/v_models"</code></summary>
+                                            <ol>
+                                                MAC-10 - "<code>smg_mac10</code>"<br>
+                                                MP5-SD - "<code>smg_mp5sd</code>"<br>
+                                                MP7 - "<code>smg_mp7</code>"<br>
+                                                MP9 - "<code>smg_mp9</code>"<br>
+                                                P90 - "<code>smg_p90</code>"<br>
+                                                PP-Bizon - "<code>smg_bizon</code>"<br>
+                                                UMP-45 - "<code>smg_ump45</code>"
+                                            </ol>
+                                        </details>
+                                        <details>
+                                            <summary style="color: #E09540">Rifles: <code style="color: cyan">"materials/models/weapons/v_models"</code></summary>
+                                            <ol>
+                                                AK-47 - "<code>rif_ak47</code>"<br>
+                                                AUG - "<code>rif_aug</code>"<br>
+                                                AWP - "<code>snip_awp</code>"<br>
+                                                FAMAS - "<code>rif_famas</code>"<br>
+                                                G3SG1 - "<code>snip_g3sg1</code>"<br>
+                                                Galil AR - "<code>rif_galilar</code>"<br>
+                                                M4A1-S - "<code>rif_m4a1_silencer</code>"<br>
+                                                M4A4 - "<code>rif_m4a4</code>"<br>
+                                                SCAR-20 - "<code>snip_scar20</code>"<br>
+                                                SG 553 - "<code>rif_sg556</code>"<br>
+                                                SSG 08 - "<code>snip_ssg08</code>"
+                                            </ol>
+                                        </details>
+                                        <details>
+                                            <summary style="color: #E09540">Heavies: <code style="color: cyan">"materials/models/weapons/v_models"</code></summary>
+                                            <ol>
+                                                M249 - "<code>mach_m249para</code>"<br>
+                                                MAG-7 - "<code>shot_mag7</code>"<br>
+                                                Negev - "<code>mach_negev</code>"<br>
+                                                Nova - "<code>shot_nova</code>"<br>
+                                                Sawed-Off - "<code>shot_sawedoff</code>"<br>
+                                                XM1014 - "<code>shot_xm1014</code>"
+                                            </ol>
+                                        </details>
+                                        <details>
+                                            <summary style="color: #E09540">Knives: <code style="color: cyan">"materials/models/weapons/v_models"</code></summary>
+                                            <ol>
+                                                Bayonet - "<code>knife_bayonet</code>"<br>
+                                                Bowie Knife - "<code>knife_survival_bowie</code>"<br>
+                                                Butterfly Knife - "<code>knife_butterfly</code>"<br>
+                                                Classic Knife - "<code>knife_css</code>"<br>
+                                                Falchion Knife - "<code>knife_falchion_advanced</code>"<br>
+                                                Flip Knife - "<code>knife_flip</code>"<br>
+                                                Gut Knife - "<code>knife_gut</code>"<br>
+                                                Huntsman Knife - "<code>knife_tactical</code>"<br>
+                                                Karambit - "<code>knife_karam</code>"<br>
+                                                M9 Bayonet - "<code>knife_m9_bay</code>"<br>
+                                                Navaja Knife - "<code>knife_gypsy_jack</code>"<br>
+                                                Nomad Knife - "<code>knife_outdoor</code>"<br>
+                                                Paracord Knife - "<code>knife_cord</code>"<br>
+                                                Shadow Daggers - "<code>knife_push</code>"<br>
+                                                Skeleton Knife - "<code>knife_skeleton</code>"<br>
+                                                Stiletto Knife - "<code>knife_stiletto</code>"<br>
+                                                Survival Knife - "<code>knife_canis</code>"<br>
+                                                Talon Knife - "<code>knife_widowmaker</code>"<br>
+                                                Ursus Knife - "<code>knife_ursus</code>"
+                                            </ol>
+                                        </details>
+                                        <details>
+                                            <summary style="color: #E09540">Gloves: <code style="color: cyan">"materials/models/weapons/v_models/arms"</code></summary>
+                                            <ol>
+                                                Bloodhound Gloves - "<code>glove_bloodhound</code>"<br>
+                                                Bloodhound Perfect World Gloves - "<code>glove_bloodhound</code>"<br>
+                                                Broken Fang Gloves - "<code>glove_bloodhound</code>"<br>
+                                                Driver Gloves - "<code>glove_slick</code>"<br>
+                                                Hand Wraps - "<code>glove_handwrap_leathery</code>"<br>
+                                                Hydra Gloves - "<code>glove_bloodhound</code>"<br>
+                                                Moto Gloves - "<code>glove_motorcycle</code>"<br>
+                                                Specialist Gloves - "<code>glove_specialist</code>"<br>
+                                                Sport Gloves - "<code>glove_sporty</code>"
+                                            </ol>
+                                        </details>
+                                    </ol>
+                                </details>
+                            </li>
                         </ol>
                     </details>
                     <details>
                         <summary>Способ 2: RevEmu Inventory Creator</summary>
                         <ul>
-                            <li style="color: #00ff00">Присутствует возможность выбрать конкретный числовой паттерн.
+                            <li style="color: #03C03C">Присутствует возможность выбрать конкретный числовой паттерн.
                             </li>
-                            <li style="color: #00ff00">Присутствует возможность экспорта сгенерированных игрой иконок
+                            <li style="color: #03C03C">Присутствует возможность экспорта сгенерированных игрой иконок
                                 VGUI
                                 ножей и перчаток из инвентаря.</li>
-                            <li style="color: #00ff00">Присутствует возможность экспорта скинов на ножи и перчатки.
+                            <li style="color: #03C03C">Присутствует возможность экспорта скинов на ножи и перчатки.
                             </li>
-                            <li style="color: #ff0000">Отсутствует возможность добавлять скины через ссылку для осмотра
+                            <li style="color: #BF4F51">Отсутствует возможность добавлять скины через ссылку для осмотра
                                 (есть метод, как это исправить).</li>
                         </ul>
                         <p>Инструкция: скачай <a

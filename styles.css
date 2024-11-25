@@ -5,7 +5,7 @@ a {
     color: #9780e5;
 }
 
-html, .content {
+html, .layout {
     scroll-behavior: smooth;
 }
 
@@ -64,23 +64,32 @@ header {
     will-change: scroll-position;
 }
 
+.sidebar .material-symbols-outlined {
+    font-size: 26px;
+}
+
 .sidebar {
     position: sticky;
     will-change: transform;
     min-width: 250px;
+    max-width: 250px;
+    padding: 0;
+    /* margin-top: 65px; */
     top: 65px;
-    max-height: calc(100vh - 65px);
+    height: calc(100vh - 65px);
     background-color: #292929;
     transform: translateX(0);
     font-size: 15px;
-    transition: width 0.3s ease-in-out, max-height 0.3s ease-in-out, transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    overflow: clip;
+    border-radius: 0;
+    transition: border-radius 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out, transform 0.3s ease-in-out, font-size 0.45s ease-in-out;
 }
 
 .sidebar.collapsed {
     transform: translateX(-200px);
-    max-height: 50px;
+    height: 64px;
     border-radius: 0 10px 10px 0;
-    transition: width 0.3s ease-in-out, max-height 0.3 ease-in-out, transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    transition: border-radius 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out, transform 0.3s ease-in-out, font-size 0.1s ease-in-out;
     font-size: 0;
 }
 
@@ -88,8 +97,8 @@ header {
     transform: translateX(7px);
     transition: transform 0.3s ease-in-out, margin-top 0.3s ease-in-out, rotate 0.3s ease-in-out, margin-left 0.3s ease-in-out;
     font-size: 0;
-    margin-top: 19px;
-    margin-left: 207px;
+    margin-top: 25px;
+    margin-left: 206px;
     rotate: -90deg;
 }
 
@@ -101,12 +110,12 @@ header {
 .sidebar-toggle {
     transform: translateX(0);
     transition: transform 0.3s ease-in-out, margin-top 0.3s ease-in-out, rotate 0.3s ease-in-out, margin-left 0.3s ease-in-out;
-    margin-top: 19px;
+    margin-top: 18px;
     background: none;
     border: none;
     color: #f5f5f5;
     cursor: pointer;
-    margin-left: 200px;
+    margin-left: 199px;
 }
 
 .sidebar ul {
@@ -125,13 +134,10 @@ header {
     padding: 1rem;
     padding-top: 65px; 
     transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+    margin-left: 0;
 }
 
 .material-symbols-outlined {
     color: #f5f5f5;
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24
 }
