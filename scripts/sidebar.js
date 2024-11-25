@@ -5,27 +5,27 @@ const header = document.querySelector('header');
 const menuLinks = document.querySelectorAll('.sidebar');
 const ANIMATION_DURATION = 300;
 
-function updateHeaderWidth() {
-    const hasVerticalScrollbar = content.scrollHeight > content.clientHeight;
-    if (hasVerticalScrollbar) {
-        header.style.width = 'calc(100% - 82px)';
-    } else {
-        header.style.width = '100%';
-    }
-}
+// function updateHeaderWidth() {
+//     const hasVerticalScrollbar = content.scrollHeight > content.clientHeight;
+//     if (hasVerticalScrollbar) {
+//         header.style.width = 'calc(100% - 82px)';
+//     } else {
+//         header.style.width = '100%';
+//     }
+// }
 
 const resizeObserver = new ResizeObserver(() => {
-    updateHeaderWidth();
+    // updateHeaderWidth();
 });
 resizeObserver.observe(content);
 
-updateHeaderWidth();
-window.addEventListener('resize', updateHeaderWidth);
+// updateHeaderWidth();
+// window.addEventListener('resize', updateHeaderWidth);
 
 toggleButton.addEventListener('click', () => {
     sidebar.classList.toggle('collapsed');
 
-    setTimeout(updateHeaderWidth);
+    // setTimeout(updateHeaderWidth);
 });
 
 document.addEventListener('click', (event) => {
