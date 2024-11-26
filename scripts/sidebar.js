@@ -19,6 +19,6 @@ menuLinks.forEach(link => {
     link.addEventListener('click', () => {
         setTimeout(() => {
             header.classList.add('collapsed');
-        }, 300);
+        }, 250);
     });
 });

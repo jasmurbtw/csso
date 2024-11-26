@@ -7,8 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="preload">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close,menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS:SO Guides</title>
     <link rel="stylesheet" href="styles.css">
@@ -18,7 +17,7 @@
     <div class="noto-sans-sc">
         <div class="layout">
             <header class="header collapsed">
-                <h2>Skins Guide.</h2>
+                <h3>Skins Guide.</h3>
                 <button id="toggle-sidebar" class="header-open-button">
                     <span class="material-symbols-outlined">menu</span>
                 </button>
@@ -48,17 +47,17 @@
                 <section id="chapter2">
                     <h2>Настройка программ.</h2>
                     <details>
-                        <summary>Настройка uMod</summary>
+                        <summary>Настройка <code>uMod</code></summary>
                         <p>В папке, куда ты распаковал <code>uMod</code>, найди "<code>d3d9.dll</code>", скопируй её в
                             папку
                             "<code>bin</code>", куда ты установил <code>CS:GO</code> (Допустим, ты установил
                             <code>CS:GO</code> на рабочий стол по пути
-                            <code>"C:/Users/MyUserName/Desktop/CS:GO_7L"</code>, тогда тебе нужно скопировать
+                            "<code>C:/Users/MyUserName/Desktop/CS:GO_7L</code>", тогда тебе нужно скопировать
                             "<code>d3d9.dll</code>" в папку "<code>bin</code>" по пути
-                            <code>"C:/Users/MyUserName/Desktop/CS:GO_7L/bin"</code>).
+                            "<code>C:/Users/MyUserName/Desktop/CS:GO_7L/bin</code>").
                         </p>
-                        <p>Потом ты запускаешь <code>CS:GO</code>. <code>uMod</code> должен автоматически подхватить её,
-                            в
+                        <p>Потом ты запускаешь <code>CS:GO</code>.<br>
+                            <code>uMod</code> должен автоматически подхватить её, в
                             результате чего должна появиться соответствующая плашка в <code>uMod</code>. Описать процесс
                             настройки юмода здесь, кнопка Update. Потом закрыть ксго и заново открыть ее, темплейт
                             должен
@@ -67,7 +66,7 @@
                             в ксго.</p>
                     </details>
                     <details>
-                        <summary>Настройка CS:GO</summary>
+                        <summary>Настройка <code>CS:GO</code></summary>
                         <p>Инструкция: открой <a href="https://stash.clash.gg" target="_blank">stash.clash.gg</a>.</p>
                     </details>
                 </section>
@@ -77,7 +76,7 @@
                     <br>Способ 2 позволяет экспортировать конкретный паттерн, но требует загрузки на карту.</br>
                     <p></p>
                     <details>
-                        <summary>Способ 1: Workshop Workbench</summary>
+                        <summary>Способ 1: <code>Workshop Workbench</code></summary>
                         <ul>
                             <li style="color: #03C03C">Более быстрый вариант экспорта с гибкой настройкой износа и
                                 прочих
@@ -92,12 +91,12 @@
                         <ol>
                             <li>Открой <a href="https://stash.clash.gg" target="_blank">stash.clash.gg</a>.
                                 (Сайт заблокирован в РФ).</li>
-                            <li>Найди нужный скин и скопируй цифровое значение его <code>Finish Catalog</code>.
+                            <li>Найди нужный скин и скопируй цифровое значение его "<code>Finish Catalog:</code>".
                                 <a href="images/csgostash_id.png" target="_blank" style="text-decoration: none">Screenshot</a></li>
                             <li>Открой файл "<code>items_game.txt</code>" по пути
                                 "<code>КОРНЕВАЯ_ПАПКА_УСТАНОВКИ_CS:GO/csgo/scripts/items</code>"
                                 через любой текстовый редактор. (Допустим, ты установил <code>CS:GO</code>
-                                на рабочий стол по пути <code>"C:/Users/MyUserName/Desktop/CS:GO_7L"</code>,
+                                на рабочий стол по пути "<code>C:/Users/MyUserName/Desktop/CS:GO_7L</code>",
                                 тогда тебе нужно открыть папку "<code>csgo</code>",
                                 потом открыть папку "<code>scripts</code>", а потом открыть папку "<code>items</code>"
                                 и в ней открыть файл "<code>items_game.txt</code>".</li>
@@ -117,14 +116,14 @@
                                 <a href="images/notepad_replace.png" target="_blank"
                                 style="text-decoration: none">Screenshot</a></li>
                             <li>Запусти <code>CS:GO</code>, открой внутриигровую консоль и введи в неё
-                                <code>workshop_workbench</code>. Откроется окошко мастерской.
+                                "<code>workshop_workbench</code>". Откроется окошко мастерской.
                                 <a href="images/workshop_workbench_start.jpg" target="_blank"
                                 style="text-decoration: none">Screenshot</a></li>
                             <li>В открывшемся окне найди надпись "<code>AK-47</code>"
                                 (<a href="images/workshop_workbench_weapon.jpg" target="_blank"
                                 style="text-decoration: none">Screenshot</a>), нажми на треугольник и выбери
                                 из выпадающего списка оружие, на которое применится желаемый скин
-                                (В данном случае это "<code>AWP</code>"). Найди кнопку "<code>Load</code>" и нажми на неё
+                                (в данном случае это "<code>AWP</code>"). Найди кнопку "<code>Load</code>" и нажми на неё
                                 (<a href="images/workshop_workbench_load.jpg" target="_blank"
                                 style="text-decoration: none">Screenshot</a>). Выбери заранее сделанный
                                 "<code>awp_gungnir.txt</code>" и нажми кнопку "<code>Open</code>"
@@ -142,7 +141,7 @@
                                     <details>
                                         <summary style="color: #E09540">Важно.</summary>
                                         <ol>
-                                        Иногда случается такое, что при импорте .txt некоторые параметры сбиваются
+                                        Иногда случается такое, что при импорте <code>.txt</code> некоторые параметры сбиваются
                                             (Например "<code>wear_remap_min</code>" и "<code>wear_remap_max</code>",
                                             которые отвечают за минимальное и максимальное состояние износа текстуры)
                                             из-за того, что изначально в "<code>items_game.txt</code>" они не указаны.
@@ -154,7 +153,7 @@
                                 а число справа - "<code>wear_remap_max</code>".</ol>
                                     </details>
                             </li>
-                            <li>В программе "<code>uMod</code>" мы указывали клавиши, на которые будем "листать" текстуры.
+                            <li>В программе <code>uMod</code> мы указывали клавиши, на которые будем "листать" текстуры.
                                 В моем случае "Back" - стрелочка влево, "Save" - стрелочка вверх, "Next" - стрелочка вправо.
                                 Таким образом, я жму стрелочку влево до тех пор, пока все оружие не станет зеленым
                                 (<a href="images/workshop_workbench_weapon_green.jpg" target="_blank"
@@ -166,8 +165,8 @@
                                 (<a href="images/workshop_workbench_weapon_white.jpg" target="_blank"
                                 style="text-decoration: none">Screenshot</a> и жму стрелочку вверх чтобы сохранить и эту текстуру.
                             </li>
-                            <li>В папке, которую мы указали в "<code>uMod</code>" (куда будут сохраняться текстуры)
-                                появилось 2 файла в формате .tga
+                            <li>В папке, которую мы указали в <code>uMod</code> (куда будут сохраняться текстуры)
+                                появилось 2 файла в формате <code>.tga</code>
                                 (<a href="images/ripped.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).
                                 Тот, что с приставкой "<code>csgo_W256_H256</code>" (иногда "<code>csgo_W512_H512</code>"
                                 либо "<code>csgo_W1024_H1024</code>") - текстура экспоненты, а тот, что с приставкой
@@ -175,10 +174,10 @@
                                 карту нормалей из файлов <code>CS:GO</code>. Сделать это можно, открыв корневую папку
                                 <code>CS:GO</code>, а в ней открыть папку "<code>csgo</code>"
                                 (Допустим, ты установил <code>CS:GO</code> на рабочий стол по пути
-                            <code>"C:/Users/MyUserName/Desktop/CS:GO_7L"</code>, тогда тебе нужно открыть папку
-                            "<code>csgo</code>" по пути <code>"C:/Users/MyUserName/Desktop/CS:GO_7L/csgo"</code>).
+                            "<code>C:/Users/MyUserName/Desktop/CS:GO_7L</code>", тогда тебе нужно открыть папку
+                            "<code>csgo</code>" по пути "<code>C:/Users/MyUserName/Desktop/CS:GO_7L/csgo</code>)".
                             Далее ты листаешь в самый низ папки "<code>csgo</code>", пока не увидишь "<code>pak01_dir.vpk</code>".
-                            Этот .vpk файл нужно открыть через "<code>GCFScape</code>"
+                            Этот <code>.vpk</code> файл нужно открыть через "<code>GCFScape</code>"
                             (<a href="images/gcfscape.jpg" target="_blank"
                             style="text-decoration: none">Screenshot</a>). Далее в GCFScape нужно открыть папку "<code>paints</code>"
                             по пути "<code>materials/models/weapons/customization/</code>", а в ней открыть папку, основываясь на стиле
@@ -189,19 +188,19 @@
                             Потом вновь открываем "<code>awp_gungnir.txt</code>" и ищем там строчку
                             <code>"normal" "awp_gungnir_normal"</code>
                             (<a href="images/notepad_normal.jpg" target="_blank" style="text-decoration: none">Screenshot</a>),
-                            это название файла, который нам надо найти и распаковать в папку, которую мы указали в "<code>uMod</code>".
+                            это название файла, который нам надо найти и распаковать в папку, которую мы указали в <code>uMod</code>.
                             <details>
-                                <summary style="color: #E09540">Какую папку открывать в "<code>paints</code>"</summary>
+                                <summary style="color: #E09540">Какую папку открывать в <code>"paints"</code></summary>
                                 <ol>Ниже написаны цифры стиля и что они означают. Просто открой папку, которая указана напротив стиля.
                                 Например, если у нас стиль 7 (<code>"style" "7"</code>) в "<code>awp_gungnir.txt</code>", то мы открываем
                                 папку "<code>custom</code>", а если стиль 5 - "<code>anodized_multi</code>".<br>
-                                2 - hydrographic<br>
-                                3 - spray<br>
-                                5 - anodized_multi<br>
-                                6 - anodized_air<br>
-                                7 - custom<br>
-                                8 - antiqued<br>
-                                9 - gunsmith
+                                2 - "<code>hydrographic</code>"<br>
+                                3 - "<code>spray</code>"<br>
+                                5 - "<code>anodized_multi</code>"<br>
+                                6 - "<code>anodized_air</code>"<br>
+                                7 - "<code>custom</code>"<br>
+                                8 - "<code>antiqued</code>"<br>
+                                9 - "<code>gunsmith</code>"
                                 </ol>
                             </details>
                             </li>
@@ -223,7 +222,7 @@
                                 "<code>csso_pak_dir.vpk</code>" с помощью "<code>GCFScape</code>". В "<code>GCFScape</code>" нужно открыть
                                 папку "<code>v_models</code>" по пути "<code>materials/models/weapons</code>".
                                 <details>
-                                    <summary style="color: #E09540">Какая папка нам нужна в "<code>v_models</code>"</summary>
+                                    <summary style="color: #E09540">Какая папка нам нужна в <code>"v_models"</code></summary>
                                     <ol>Выбор папки зависит от скина на оружие.<br>
                                         <details>
                                             <summary style="color: #E09540">Pistols: <code style="color: cyan">"materials/models/weapons/v_models"</code></summary>
@@ -323,7 +322,7 @@
                         </ol>
                     </details>
                     <details>
-                        <summary>Способ 2: RevEmu Inventory Creator</summary>
+                        <summary>Способ 2: <code>RevEmu Inventory Creator</code></summary>
                         <ul>
                             <li style="color: #03C03C">Присутствует возможность выбрать конкретный числовой паттерн.
                             </li>

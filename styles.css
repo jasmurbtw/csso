@@ -1,3 +1,8 @@
+@font-face { 
+    font-family: 'CascadiaMono';
+    src: url('fonts/CascadiaMono.woff2') format('woff');
+}
+
 a {
     -webkit-transition: color 0.25s ease-in-out;
     -o-transition: color 0.25s ease-in-out;
@@ -6,7 +11,11 @@ a {
 }
 
 code {
-    font-family: "Cascadia Code", sans-serif;
+    font-family: CascadiaMono, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #61aeee;
+    /* background: #1b1b1b; */
 }
 
 html, .layout {
@@ -22,7 +31,7 @@ html, .layout {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 a:hover, a:active {
@@ -34,14 +43,15 @@ section {
     background: #292929;
     padding: 1rem;
     border-radius: 15px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     scroll-margin-top: 65px;
+    overflow: clip;
 }
 
 .content {
     width: 100%;
     padding: 1rem;
     padding-top: 65px;
+    overflow: clip;
 }
 
 @media (max-width: 768px) {
@@ -74,12 +84,13 @@ header {
     min-width: 65vw;
     max-width: 65vw;
     will-change: transform;
-    -webkit-backdrop-filter: blur(40px) saturate(150%);
-    backdrop-filter: blur(40px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+    backdrop-filter: blur(20px) saturate(150%);
     background: rgba(41, 41, 41, 0.7);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
     transition: width 0.2s ease-in-out, height 0.3s ease-in-out;
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 15px 15px;
+    overflow: clip;
 }
 
 header.collapsed {
@@ -122,16 +133,18 @@ header.collapsed .sidebar {
 
 .layout {
     display: flex;
-    overflow-y: auto;
+    overflow: auto;
 }
 
 header ul {
     list-style: none;
     padding: 0;
+    overflow: clip;
 }
 
 header a {
     text-decoration: none;
+    overflow: clip;
 }
 
 .material-symbols-outlined {
