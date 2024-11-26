@@ -23,22 +23,22 @@
                 </button>
                 <nav class="sidebar">
                     <ul>
-                        <li><a href="#chapter1">Глава 1: Установка программ.</a></li>
+                        <li><a href="#chapter1">Глава 1: Скачивание программ.</a></li>
                         <li><a href="#chapter2">Глава 2: Настройка программ.</a></li>
-                        <li><a href="#chapter3">Глава 3: Экспорт текстур.</a></li>
-                        <li><a href="pages/skins.html" target="_self">CS:SO Skins</a></li>
+                        <li><a href="#chapter3">Глава 3: Экспорт текстур.</a></li><br>
+                        <li><a href="pages/skins.html" target="_self">(WIP) CS:SO Skins</a></li>
                     </ul>
                 </nav>
             </header>
             <main class="content">
                 <section id="chapter1">
-                    <h2>Установка необходимых программ.</h2>
+                    <h2>Скачивание программ.</h2>
                     <p>Список всех программ:</p>
                     <ol>
-                        <li><a href="https://7launcher.com/?lang=en" target="_blank">CS:GO</a>. отдельный шрифт для ссылок</li>
+                        <li><a href="https://7launcher.com/?lang=en" target="_blank">CS:GO</a>.</li>
                         <li><a href="https://nemstools.github.io/pages/GCFScape-Download.html" target="_blank">GCFScape</a>.
                             <a href="./images/gcfscape_installation.png" target="_blank" style="text-decoration: none">Screenshot</a></li>
-                        <li><a href="https://code.google.com/archive/p/texmod/downloads" target="_blank">TexMod(uMod)</a>.
+                        <li><a href="https://code.google.com/archive/p/texmod/downloads" target="_blank">TexMod (uMod)</a>.
                             <a href="./images/umod.png" target="_blank" style="text-decoration: none">Screenshot</a></li>
                         <li><a href="https://github.com/Sky-rym/VTFEdit-Reloaded/releases" target="_blank">VTFEdit Reloaded</a>.
                             <a href="./images/vtfedit_reloaded.png" target="_blank" style="text-decoration: none">Screenshot</a></li>
@@ -47,27 +47,46 @@
                 <section id="chapter2">
                     <h2>Настройка программ.</h2>
                     <details>
-                        <summary>Настройка <code>uMod</code></summary>
-                        <p>В папке, куда ты распаковал <code>uMod</code>, найди "<code>d3d9.dll</code>", скопируй её в
+                        <summary>Настройка <code>uMod</code>.</summary>
+                        <p>
+                            В папке, куда ты распаковал <code>uMod</code>, найди "<code>d3d9.dll</code>", скопируй её в
                             папку
                             "<code>bin</code>", куда ты установил <code>CS:GO</code> (Допустим, ты установил
                             <code>CS:GO</code> на рабочий стол по пути
                             "<code>C:/Users/MyUserName/Desktop/CS:GO_7L</code>", тогда тебе нужно скопировать
                             "<code>d3d9.dll</code>" в папку "<code>bin</code>" по пути
                             "<code>C:/Users/MyUserName/Desktop/CS:GO_7L/bin</code>").
+                            <a href="images/d3d9.jpg" target="_blank" style="text-decoration: none">Screenshot</a>
                         </p>
-                        <p>Потом ты запускаешь <code>CS:GO</code>.<br>
+                        <p>
+                            Потом ты запускаешь <code>CS:GO</code>.<br>
                             <code>uMod</code> должен автоматически подхватить её, в
-                            результате чего должна появиться соответствующая плашка в <code>uMod</code>. Описать процесс
-                            настройки юмода здесь, кнопка Update. Потом закрыть ксго и заново открыть ее, темплейт
-                            должен
-                            подхватиться, если нет то написать как автоматом подхватывать его, ждешь загрузки главного
-                            меню
-                            в ксго.</p>
+                            результате чего должна появиться соответствующая плашка в <code>uMod</code>.
+                           <a href="images/umod_inject.jpg" target="_blank" style="text-decoration: none">Screenshot</a><br>
+                           Далее нам нужно нажать на "<code>Capture textures > ></code>" и настроить нужные нам пункты.
+                           <a href="images/umod_template_settings.jpg" target="_blank" style="text-decoration: none">Screenshot</a><br>
+                           После нужно нажать на "<code>Main</code>", а потом на "<code>Save template</code>".<br>
+                           Откроется диалог сохранения файла в папке "<code>templates</code>", которая находится в
+                           папке установки <code>uMod</code>, куда нам и нужно сохранить полученный <code>.txt</code>
+                           файл с названием "<code>csgo.txt</code>".<br>Если вы всё сделали правильно, то в <code>uMod</code>
+                           появится такая строчка.
+                           <a href="images/umod_template_saved.jpg" target="_blank" style="text-decoration: none">Screenshot</a><br>
+                           Потом нужно еще раз нажать на
+                           "<code>Main</code>", а потом на "<code>Set template as default</code>".
+                           <a href="images/umod_template_set_as_default.jpg" target="_blank" style="text-decoration: none">Screenshot</a><br>
+                           После этого нужно закрыть <code>CS:GO</code> и заново её запустить. Если вы всё сделали правильно, то в
+                           <code>CS:GO</code> в левом верхнем углу появится такая надпись.
+                           <a href="images/csgo_d3d9_injected.jpg" target="_blank" style="text-decoration: none">Screenshot</a>
+                        </p>
                     </details>
                     <details>
-                        <summary>Настройка <code>CS:GO</code></summary>
-                        <p>Инструкция: открой <a href="https://stash.clash.gg" target="_blank">stash.clash.gg</a>.</p>
+                        <summary>Настройка <code>CS:GO</code>.</summary>
+                        <p>
+                            Открой настройки <code>CS:GO</code>, переключись на вкладку "<code>Video</code>".<br>Поставь
+                            "<code>Model / Texture Detail</code>", "<code>Effect Detail</code>" и
+                            "<code>Shader Detail</code>" на максимально возможные настройки.
+                            <a href="images/csgo_graphics_settings.jpg" target="_blank" style="text-decoration: none">Screenshot</a>
+                        </p>
                     </details>
                 </section>
                 <section id="chapter3">
@@ -99,7 +118,7 @@
                                 на рабочий стол по пути "<code>C:/Users/MyUserName/Desktop/CS:GO_7L</code>",
                                 тогда тебе нужно открыть папку "<code>csgo</code>",
                                 потом открыть папку "<code>scripts</code>", а потом открыть папку "<code>items</code>"
-                                и в ней открыть файл "<code>items_game.txt</code>".</li>
+                                и в ней открыть файл "<code>items_game.txt</code>").</li>
                             <li>В "<code>items_game.txt</code>" найди скопированное числовое значение
                                 "<code>Finish Catalog:</code>".
                                 <a href="images/notepad_search.png" target="_blank"
@@ -107,28 +126,29 @@
                             <li>Скопируй всё, что выделено на скриншоте.
                                 <a href="images/notepad_copy.png" target="_blank"
                                 style="text-decoration: none">Screenshot</a></li>
-                            <li>Открой корневую папку установки <code>CS:GO</code>.
+                            <li>Открой корневую папку установки <code>CS:GO</code>.<br>
                                 Создай в ней "<code>.txt</code>" файл с любым названием,
-                                например "<code>awp_gungnir.txt</code>". Открой его через любой текстовый редактор
-                                и вставь скопированный тобою из "<code>items_game.txt</code>" текст.
+                                например "<code>awp_gungnir.txt</code>".<br>Открой его через любой текстовый редактор
+                                и вставь скопированный тобою из "<code>items_game.txt</code>" текст.<br>
                                 Замени найденный тобою ранее числовое значение "<code>Finish Catalog:</code>"
-                                на "<code>workshop_preview</code>". Сохрани "<code>awp_gungnir.txt</code>".
-                                <a href="images/notepad_replace.png" target="_blank"
-                                style="text-decoration: none">Screenshot</a></li>
+                                на "<code>workshop_preview</code>" (<a href="images/notepad_replace.png" target="_blank"
+                                style="text-decoration: none">Screenshot</a>)
+                                .<br>Сохрани "<code>awp_gungnir.txt</code>".
+                            </li>
                             <li>Запусти <code>CS:GO</code>, открой внутриигровую консоль и введи в неё
-                                "<code>workshop_workbench</code>". Откроется окошко мастерской.
+                                "<code>workshop_workbench</code>".<br>Откроется окошко мастерской.
                                 <a href="images/workshop_workbench_start.jpg" target="_blank"
                                 style="text-decoration: none">Screenshot</a></li>
                             <li>В открывшемся окне найди надпись "<code>AK-47</code>"
                                 (<a href="images/workshop_workbench_weapon.jpg" target="_blank"
                                 style="text-decoration: none">Screenshot</a>), нажми на треугольник и выбери
                                 из выпадающего списка оружие, на которое применится желаемый скин
-                                (в данном случае это "<code>AWP</code>"). Найди кнопку "<code>Load</code>" и нажми на неё
+                                (в данном случае это "<code>AWP</code>").<br>Найди кнопку "<code>Load</code>" и нажми на неё
                                 (<a href="images/workshop_workbench_load.jpg" target="_blank"
-                                style="text-decoration: none">Screenshot</a>). Выбери заранее сделанный
+                                style="text-decoration: none">Screenshot</a>).<br>Выбери заранее сделанный
                                 "<code>awp_gungnir.txt</code>" и нажми кнопку "<code>Open</code>"
                                 (<a href="images/workshop_workbench_import_txt.jpg" target="_blank"
-                                style="text-decoration: none">Screenshot</a>). Если ты все сделал верно, то скин успешно
+                                style="text-decoration: none">Screenshot</a>).<br>Если ты все сделал верно, то скин успешно
                                 применится на оружие (<a href="images/workshop_workbench_imported.jpg" target="_blank"
                                 style="text-decoration: none">Screenshot</a>).
                             </li>
@@ -136,15 +156,15 @@
                                 (<a href="images/workshop_workbench_parameters.jpg" target="_blank"
                                 style="text-decoration: none">Screenshot</a>) и сдвинь его максимально влево
                                 (<a href="images/workshop_workbench_parameters2.jpg" target="_blank"
-                                style="text-decoration: none">Screenshot</a>). Таким образом можно настроить износ скина
-                                (В данном случае Factory New).
-                                    <details>
+                                style="text-decoration: none">Screenshot</a>).<br>Таким образом можно настроить износ скина
+                                (В данном случае <code>Factory New</code>).
+                                    <details style="background: #1b1b1b;">
                                         <summary style="color: #E09540">Важно.</summary>
                                         <ol>
                                         Иногда случается такое, что при импорте <code>.txt</code> некоторые параметры сбиваются
-                                            (Например "<code>wear_remap_min</code>" и "<code>wear_remap_max</code>",
+                                            (например "<code>wear_remap_min</code>" и "<code>wear_remap_max</code>",
                                             которые отвечают за минимальное и максимальное состояние износа текстуры)
-                                            из-за того, что изначально в "<code>items_game.txt</code>" они не указаны.
+                                            из-за того, что изначально в "<code>items_game.txt</code>" они не указаны.<br>
                                             В таком случае, нужно зайти на сайт
                                             <a href="https://stash.clash.gg" target="_blank">stash.clash.gg</a>, откуда мы брали
                                             значение "<code>Finish Catalog:</code>" и посмотреть там диапазон износа
@@ -153,45 +173,39 @@
                                 а число справа - "<code>wear_remap_max</code>".</ol>
                                     </details>
                             </li>
-                            <li>В программе <code>uMod</code> мы указывали клавиши, на которые будем "листать" текстуры.
-                                В моем случае "Back" - стрелочка влево, "Save" - стрелочка вверх, "Next" - стрелочка вправо.
+                            <li>В программе <code>uMod</code> мы указывали клавиши, на которые будем "листать" текстуры.<br>
+                                В моем случае "Back" - стрелочка влево, "Save" - стрелочка вверх, "Next" - стрелочка вправо.<br>
                                 Таким образом, я жму стрелочку влево до тех пор, пока все оружие не станет зеленым
                                 (<a href="images/workshop_workbench_weapon_green.jpg" target="_blank"
-                                style="text-decoration: none">Screenshot</a>, но, у таких скинов как "<code>M4A1-S | Printstream</code>"
-                                оружие заместо зеленого может стать радужным
+                                style="text-decoration: none">Screenshot</a>. Но, у таких скинов как "<code>M4A1-S | Printstream</code>"
+                                оружие вместо зелёного может стать радужным
                                 (<a href="images/workshop_workbench_weapon_m4a1s_printstream.jpg" target="_blank"
-                                style="text-decoration: none">Screenshot</a>) и жму стрелочку вверх, чтобы сохранить текстуру скина.
+                                style="text-decoration: none">Screenshot</a>)), а потом жму стрелочку вверх, чтобы сохранить текстуру скина.<br>
                                 После я жму стрелочку влево/вправо до тех пор, пока все оружие неестественно посветлеет
                                 (<a href="images/workshop_workbench_weapon_white.jpg" target="_blank"
                                 style="text-decoration: none">Screenshot</a> и жму стрелочку вверх чтобы сохранить и эту текстуру.
                             </li>
                             <li>В папке, которую мы указали в <code>uMod</code> (куда будут сохраняться текстуры)
                                 появилось 2 файла в формате <code>.tga</code>
-                                (<a href="images/ripped.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).
+                                (<a href="images/ripped.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
                                 Тот, что с приставкой "<code>csgo_W256_H256</code>" (иногда "<code>csgo_W512_H512</code>"
                                 либо "<code>csgo_W1024_H1024</code>") - текстура экспоненты, а тот, что с приставкой
-                                "<code>csgo_W2048_H2048</code>" - основная текстура скина. Но, помимо этого, нам нужно еще достать
-                                карту нормалей из файлов <code>CS:GO</code>. Сделать это можно, открыв корневую папку
+                                "<code>csgo_W2048_H2048</code>" - основная текстура скина.<br>Но, помимо этого, нам нужно еще достать
+                                карту нормалей из файлов <code>CS:GO</code>.<br>Сделать это можно, открыв корневую папку
                                 <code>CS:GO</code>, а в ней открыть папку "<code>csgo</code>"
                                 (Допустим, ты установил <code>CS:GO</code> на рабочий стол по пути
                             "<code>C:/Users/MyUserName/Desktop/CS:GO_7L</code>", тогда тебе нужно открыть папку
-                            "<code>csgo</code>" по пути "<code>C:/Users/MyUserName/Desktop/CS:GO_7L/csgo</code>)".
-                            Далее ты листаешь в самый низ папки "<code>csgo</code>", пока не увидишь "<code>pak01_dir.vpk</code>".
+                            "<code>csgo</code>" по пути "<code>C:/Users/MyUserName/Desktop/CS:GO_7L/csgo</code>)".<br>
+                            Далее ты листаешь в самый низ папки "<code>csgo</code>", пока не увидишь "<code>pak01_dir.vpk</code>".<br>
                             Этот <code>.vpk</code> файл нужно открыть через "<code>GCFScape</code>"
                             (<a href="images/gcfscape.jpg" target="_blank"
-                            style="text-decoration: none">Screenshot</a>). Далее в GCFScape нужно открыть папку "<code>paints</code>"
+                            style="text-decoration: none">Screenshot</a>).<br>Далее в GCFScape нужно открыть папку "<code>paints</code>"
                             по пути "<code>materials/models/weapons/customization/</code>", а в ней открыть папку, основываясь на стиле
                             скина, который мы делали (стиль можно узнать, если открыть "<code>awp_gungnir.txt</code>",
-                            который мы создали ранее. Там будет строчка <code>"style" "9"</code>
-                            (<a href="images/notepad_style.jpg" target="_blank" style="text-decoration: none">Screenshot</a>),
-                            наш стиль - 9, значит мы открываем папку "<code>gunsmith</code>").
-                            Потом вновь открываем "<code>awp_gungnir.txt</code>" и ищем там строчку
-                            <code>"normal" "awp_gungnir_normal"</code>
-                            (<a href="images/notepad_normal.jpg" target="_blank" style="text-decoration: none">Screenshot</a>),
-                            это название файла, который нам надо найти и распаковать в папку, которую мы указали в <code>uMod</code>.
-                            <details>
+                            который мы создали ранее.
+                            <details style="background: #1b1b1b;">
                                 <summary style="color: #E09540">Какую папку открывать в <code>"paints"</code></summary>
-                                <ol>Ниже написаны цифры стиля и что они означают. Просто открой папку, которая указана напротив стиля.
+                                <ol>Ниже написаны цифры стиля и что они означают.<br>Просто открой папку, которая указана напротив стиля.<br>
                                 Например, если у нас стиль 7 (<code>"style" "7"</code>) в "<code>awp_gungnir.txt</code>", то мы открываем
                                 папку "<code>custom</code>", а если стиль 5 - "<code>anodized_multi</code>".<br>
                                 2 - "<code>hydrographic</code>"<br>
@@ -203,29 +217,38 @@
                                 9 - "<code>gunsmith</code>"
                                 </ol>
                             </details>
+                            Там будет строчка <code>"style" "9"</code>
+                            (<a href="images/notepad_style.jpg" target="_blank" style="text-decoration: none">Screenshot</a>),
+                            наш стиль - 9, значит мы открываем папку "<code>gunsmith</code>").<br>
+                            Потом вновь открываем "<code>awp_gungnir.txt</code>" и ищем там строчку
+                            <code>"normal" "awp_gungnir_normal"</code>
+                            (<a href="images/notepad_normal.jpg" target="_blank" style="text-decoration: none">Screenshot</a>),
+                            это название файла, который нам надо найти и скопировать на рабочий стол.
                             </li>
-                            <li>Открываем программу "<code>VTFEdit Reloaded</code>". Жмём кнопку импорта
-                                (<a href="images/vtfedit_import.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).
+                            <li>Открываем программу "<code>VTFEdit Reloaded</code>".<br>Жмём кнопку импорта
+                                (<a href="images/vtfedit_import.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
                                 Открывается диалог выбора файла для импорта, выбираем в нём текстуру с префиксом
-                                "<code>csgo_w256_h256</code>" ("<code>csgo_w512_h512</code>" либо "<code>csgo_W1024_H1024</code>"),
-                                жмём "<code>Open</code>". В "<code>VTFEdit Reloaded</code>" появится окошко с настройками импорта
+                                "<code>csgo_W256_H256</code>" ("<code>csgo_W512_H512</code>" либо "<code>csgo_W1024_H1024</code>"),
+                                жмём "<code>Open</code>".<br>В "<code>VTFEdit Reloaded</code>" появится окошко с настройками импорта
                                 (<a href="images/vtfedit_import_options.jpg" target="_blank" style="text-decoration: none">Screenshot</a>),
-                                выставляем что нам нужно и жмём "<code>OK</code>". Жмём кнопку сохранения
+                                выставляем что нам нужно и жмём "<code>OK</code>".<br>Жмём кнопку сохранения
                                 (<a href="images/vtfedit_save.jpg" target="_blank" style="text-decoration: none">Screenshot</a>)
-                                и сохраняем текстуру на рабочий стол с названием "<code>csgo_w256_h256</code>"
-                                ("<code>csgo_w512_h512</code>", если импортировали текстуру с префиксом "<code>csgo_w512_h512</code>"
-                                и "<code>csgo_w1024_h1024</code>", если импортировали текстуру с префиксом "<code>csgo_w1024_h1024</code>")
-                                Повторяем этот шаг для второй текстуры ("<code>csgo_w2048_h2048</code>"),
-                                сохранив её с именем "<code>csgo_w2048_h2048</code>".
+                                и сохраняем текстуру на рабочий стол с названием "<code>csgo_W256_H256</code>"
+                                ("<code>csgo_W512_H512</code>", если импортировали текстуру с префиксом "<code>csgo_W512_h512</code>"
+                                и "<code>csgo_W1024_H1024</code>", если импортировали текстуру с префиксом "<code>csgo_W1024_h1024</code>").<br>
+                                Повторяем этот шаг для второй текстуры ("<code>csgo_W2048_H2048</code>"),
+                                сохранив её с именем "<code>csgo_W2048_H2048</code>".
                             </li>
-                            <li>Открываем папку, куда установлена "<code>CS:SO</code>". В ней нам нужно открыть
-                                "<code>csso_pak_dir.vpk</code>" с помощью "<code>GCFScape</code>". В "<code>GCFScape</code>" нужно открыть
-                                папку "<code>v_models</code>" по пути "<code>materials/models/weapons</code>".
-                                <details>
+                            <li>Открываем папку, куда установлена "<code>CS:SO</code>".<br>В ней нам нужно открыть
+                                "<code>csso_pak_dir.vpk</code>" с помощью "<code>GCFScape</code>".<br>В "<code>GCFScape</code>" нужно открыть
+                                папку "<code>v_models</code>" по пути "<code>materials/models/weapons</code>".<br>
+                                Вытаскиваем нужную нам папку на рабочий стол.<br>Далее открываем папку "<code>w_models</code>" по пути
+                                "<code>materials/models/weapons</code>".<br>Вытаскиваем папку, которая нам нужна, на рабочий стол.
+                                <details style="background: #1b1b1b">
                                     <summary style="color: #E09540">Какая папка нам нужна в <code>"v_models"</code></summary>
-                                    <ol>Выбор папки зависит от скина на оружие.<br>
+                                    <ol>Выбор папки зависит от типа оружия, на который мы применили скин.
                                         <details>
-                                            <summary style="color: #E09540">Pistols: <code style="color: cyan">"materials/models/weapons/v_models"</code></summary>
+                                            <summary style="color: #E09540">Pistols: <code style="color: cyan">"materials/models/weapons/v_models"</code>?</summary>
                                             <ol>
                                                 CZ75-Auto - "<code>pist_cz_75</code>"<br>
                                                 Desert Eagle - "<code>pist_deagle</code>"<br>
@@ -318,6 +341,187 @@
                                         </details>
                                     </ol>
                                 </details>
+                                <details style="background: #1b1b1b;">
+                                    <summary style="color: #E09540">Какая папка нам нужна в <code>"w_models"</code>?</summary>
+                                    <ol>Выбор папки зависит от типа оружия, на который мы применили скин.
+                                        <details>
+                                            <summary style="color: #E09540">Pistols: <code style="color: cyan">"materials/models/weapons/w_models"</code></summary>
+                                            <ol>
+                                                CZ75-Auto - "<code>w_pist_cz_75</code>"<br>
+                                                Desert Eagle - "<code>w_pist_deagle</code>"<br>
+                                                Dual Berettas - "<code>w_pist_elite</code>"<br>
+                                                Five-SeveN - "<code>w_pist_fiveseven</code>"<br>
+                                                Glock-18 - "<code>w_pist_glock18</code>"<br>
+                                                P2000 - "<code>w_pist_hkp2000</code>"<br>
+                                                P250 - "<code>w_pist_p250</code>"<br>
+                                                R8 Revolver - "<code>w_pist_revolver</code>"<br>
+                                                Tec-9 - "<code>w_pist_tec9</code>"<br>
+                                                USP-S - "<code>w_pist_usp</code>""
+                                            </ol>
+                                        </details>
+                                        <details>
+                                            <summary style="color: #E09540">SMGs: <code style="color: cyan">"materials/models/weapons/w_models"</code></summary>
+                                            <ol>
+                                                MAC-10 - "<code>w_smg_mac10</code>"<br>
+                                                MP5-SD - "<code>w_smg_mp5sd</code>"<br>
+                                                MP7 - "<code>w_smg_mp7</code>"<br>
+                                                MP9 - "<code>w_smg_mp9</code>"<br>
+                                                P90 - "<code>w_smg_p90</code>"<br>
+                                                PP-Bizon - "<code>w_smg_bizon</code>"<br>
+                                                UMP-45 - "<code>w_smg_ump45</code>"
+                                            </ol>
+                                        </details>
+                                        <details>
+                                            <summary style="color: #E09540">Rifles: <code style="color: cyan">"materials/models/weapons/w_models"</code></summary>
+                                            <ol>
+                                                AK-47 - "<code>w_rif_ak47</code>"<br>
+                                                AUG - "<code>w_rif_aug</code>"<br>
+                                                AWP - "<code>w_snip_awp</code>"<br>
+                                                FAMAS - "<code>w_rif_famas</code>"<br>
+                                                G3SG1 - "<code>w_snip_g3sg1</code>"<br>
+                                                Galil AR - "<code>w_rif_galilar</code>"<br>
+                                                M4A1-S - "<code>w_rif_m4a1_silencer</code>"<br>
+                                                M4A4 - "<code>w_rif_m4a4</code>"<br>
+                                                SCAR-20 - "<code>w_snip_scar20</code>"<br>
+                                                SG 553 - "<code>w_rif_sg556</code>"<br>
+                                                SSG 08 - "<code>w_snip_ssg08</code>"
+                                            </ol>
+                                        </details>
+                                        <details>
+                                            <summary style="color: #E09540">Heavies: <code style="color: cyan">"materials/models/weapons/w_models"</code></summary>
+                                            <ol>
+                                                M249 - "<code>w_mach_m249para</code>"<br>
+                                                MAG-7 - "<code>w_shot_mag7</code>"<br>
+                                                Negev - "<code>w_mach_negev</code>"<br>
+                                                Nova - "<code>w_shot_nova</code>"<br>
+                                                Sawed-Off - "<code>w_shot_sawedoff</code>"<br>
+                                                XM1014 - "<code>w_shot_xm1014</code>"
+                                            </ol>
+                                        </details>
+                                        <details>
+                                            <summary style="color: #E09540">Knives: <code style="color: cyan">"materials/models/weapons/w_models"</code></summary>
+                                            <ol>
+                                                Bayonet - "<code>w_knife_bayonet</code>"<br>
+                                                Bowie Knife - "<code>w_knife_survival_bowie</code>"<br>
+                                                Butterfly Knife - "<code>w_knife_butterfly</code>"<br>
+                                                Classic Knife - "<code>w_knife_css</code>"<br>
+                                                Falchion Knife - "<code>w_knife_falchion_advanced</code>"<br>
+                                                Flip Knife - "<code>w_knife_flip</code>"<br>
+                                                Gut Knife - "<code>w_knife_gut</code>"<br>
+                                                Huntsman Knife - "<code>w_knife_tactical</code>"<br>
+                                                Karambit - "<code>w_knife_karam</code>"<br>
+                                                M9 Bayonet - "<code>w_knife_m9_bay</code>"<br>
+                                                Navaja Knife - "<code>w_knife_gypsy_jack</code>"<br>
+                                                Nomad Knife - "<code>w_knife_outdoor</code>"<br>
+                                                Paracord Knife - "<code>w_knife_cord</code>"<br>
+                                                Shadow Daggers - "<code>w_knife_push</code>"<br>
+                                                Skeleton Knife - "<code>w_knife_skeleton</code>"<br>
+                                                Stiletto Knife - "<code>w_knife_stiletto</code>"<br>
+                                                Survival Knife - "<code>w_knife_canis</code>"<br>
+                                                Talon Knife - "<code>w_knife_widowmaker</code>"<br>
+                                                Ursus Knife - "<code>w_knife_ursus</code>"
+                                            </ol>
+                                        </details>
+                                    </ol>
+                                </details>
+                            </li>
+                            <li>
+                                Открываем папку "<code>custom</code>" в папке <code>CS:SO</code>.<br>
+                                Создаём в ней папку с любым названием, например "<code>awp_gungnir</code>".<br>
+                                Открываем её.<br>
+                                Создаём в ней папку "<code>materials</code>", в ней создаём папку "<code>models</code>",
+                                в ней создаём папку "<code>weapons</code>", открываем её. В этой папке создаём папки
+                                "<code>v_models</code>" и "<code>w_models</code>"
+                                (<a href="images/notepad_normal.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+                                В папку "<code>v_models</code>" мы кладём папку "<code>snip_awp</code>", которую мы достали из папки
+                                "<code>v_models</code>" в "<code>csso_pak_dir.vpk</code>" по пути "<code>materials/models/weapons</code>".<br>
+                                В папку "<code>w_models</code>" мы кладём папку "<code>w_snip_awp</code>", которую мы достали из папки
+                                "<code>w_models</code>" в "<code>csso_pak_dir.vpk</code>" по пути "<code>materials/models/weapons</code>".<br>
+                                Попутно можно удалить все файлы <code>.vtf</code>, так как они нам не понадобятся,
+                                в папке "<code>w_models</code>" в созданной тобою папке "<code>awp_gungnir</code>",
+                                находящейся в "<code>custom</code>".<br>
+                                Далее идём в папку "<code>v_models</code>", в ней открываем папку "<code>snip_awp</code>", а в ней
+                                открываем файл "<code>awp.vmt</code>" через любой текстовый редактор.<br>
+                                В нём нам надо удалить все строчки, начинающиеся с "<code>$envmap</code>"
+                                (<a href="images/vmt_notepad.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).
+                                На рабочем столе у нас лежат сконвертированные текстуры <code>.vtf</code> из 12 шага, а также
+                                текстура нормали "<code>awp_gungnir_normal</code>, которую мы вытащили в 11 шаге.<br>
+                                Мы их копируем в папку "<code>snip_awp</code>" в папке "<code>v_models</code>".<br>
+                                Потом мы удаляем <code>.vtf</code> файлы, которые изначально были в папке "<code>snip_awp</code>"
+                                (<a href="images/explorer_delete.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+                                В <code>.vmt</code> файле нашего оружия есть строки
+                                <code>"$basetexture" "models\weapons\v_models\snip_awp\awp"</code> и
+                                <code>"$phongexponenttexture" "models\weapons\v_models\snip_awp\awp_exponent"</code>
+                                (<a href="images/notepad_textures.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+                                Нам нужно заменить "<code>awp</code>" в строке "<code>$basetexture</code>" на
+                                "<code>csgo_W2048_H2048</code>", а также заменить "<code>awp_exponent</code>" в строке
+                                "<code>$phongexponenttexture</code>" на "<code>csgo_W256_H256</code>" ("<code>csgo_W512_H512</code>"
+                                либо "<code>csgo_W1024_H1024</code>", в зависимости от того, что мы экспортировали из <code>CS:GO</code>).<br>
+                                Также в "<code>awp_gungnir.txt</code>" у нас есть пара параметров, которые нам тоже нужно переписать
+                                в наш <code>.vmt</code> файл.<br>
+                                Среди них <code>"pearlescent" "0.500000"</code>, <code>"phongalbedoboost" "195"</code>
+                                и <code>"normal" "awp_gungnir_normal"</code>
+                                (<a href="images/txt_parameters.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+                                Их нужно перенести в наш "<code>awp.vmt</code>" файл, написав заместо
+                                <code>"normal" "awp_gungnir_normal"</code>
+                                <code>"bumpmap" "models\weapons\v_models\snip_awp\awp_gungnir_normal"</code>.<br>
+                                ("<code>models\weapons\v_models\snip_awp\</code>" мы взяли из
+                                <code>"$basetexture" "</code>
+                                <code style="color: magenta">models\weapons\v_models\snip_awp\</code><code>csgo_W2048_H2048"</code>,
+                                заменив в скопированном пути "<code>csgo_W2048_H2048</code>" на название карты нормалей
+                                ("<code>awp_gungnir_normal</code>"), которую мы вытащили из "<code>pak01_dir.vpk</code>").
+                                <a href="images/vmt_edited.jpg" target="_blank" style="text-decoration: none">Screenshot</a><br>
+                                <details style="background: #1b1b1b">
+                                    <summary style="color: #E09540">Важно!</summary>
+                                    <ol>
+                                        <details>
+                                            <summary style="color: #E09540">Параметры для переноса из <code>.txt</code>
+                                            в <code>.vmt</code></summary>
+                                            <ol>
+                                                Перенося параметры из <code>.txt</code> в наш <code>.vmt</code> файл
+                                                    нужно добавлять к каждому параметру префикс "<code style="color: pink">$</code>".<br>
+                                                Например, заместо "<code>pearlescent</code>" получится
+                                                "<code style="color: pink">$</code><code>pearlescent</code>".<br>
+                                                Заместо "<code>normal</code>" получится
+                                                "<code style="color: pink">$</code><code>bumpmap</code>".<br>
+                                                Заместо "<code>phongalbedoboost</code>" получится
+                                                "<code style="color: pink">$</code><code>phongalbedoboost</code>".<br><br>
+                                                "<code>pearlescent</code>" - Переносим в наш <code>.vmt</code> файл всегда, кроме
+                                                случаев, когда значение "<code>pearlescent</code>" равно 0.<br>
+                                                "<code>normal</code>" - переносим всегда, заменяя "<code>normal</code>" на
+                                                "<code>bumpmap</code>"
+                                                "<code>phongalbedoboost</code>" - Переносим только, если:<br>
+                                                1) Значение "<code>phongalbedoboost</code>" в <code>.txt</code> файле
+                                                    (или "<code>items_game.txt</code>") больше изначального значения
+                                                    "<code>phongalbedoboost</code>" из нашего <code>.vmt</code> файла.
+                                                    (Например, в <code>.txt</code> файле значение "<code>phongalbedoboost</code>"
+                                                    равно 45, а изначальное значение "<code>phongalbedoboost</code>" в
+                                                    <code>.vmt</code> файле равно 30, то мы меняем значение
+                                                    "<code>phongalbedoboost</code>" в <code>.vmt</code> файле на 45, таким образом
+                                                    получаем "<code>phongalbedoboost 45</code>".
+                                                    <br>
+                                                    Если же изначальное значение "<code>phongalbedoboost</code>"
+                                                    в <code>.vmt</code> файле меньше или равно значения из <code>.txt</code> файла
+                                                    (или "<code>items_game.txt</code>"), то мы оставляем значение
+                                                    "<code>phongalbedoboost</code>" в <code>.vmt</code> файле нетронутым.<br>
+                                                2) Если в <code>.vmt</code> файле изначально отсутствует строчка
+                                                "<code>phongalbedoboost</code>", то мы добавляем её в наш <code>.vmt</code>
+                                                файл и добавляем к ней значение из <code>.txt</code> файла. (Например,
+                                                в <code>.vmt</code> файле не было строки "<code>phongalbedoboost</code>", а в
+                                                нашем <code>.txt</code> файле (или "<code>items_game.txt</code>") есть
+                                                строчка "<code>phongalbedoboost 80</code>", тогда мы добавляем в наш <code>.vmt</code>
+                                                файл "<code>phongalbedoboost 80</code>").<br>
+                                            </ol>
+                                        </details>
+                                    </ol>
+                                </details>
+                            </li>
+                            <li>
+                                Сохраняем получившийся <code>awp.vmt</code> файл, копируем его в папку "<code>w_snip_awp</code>"
+                                в папке "<code>w_models</code>" с заменой.
+                            </li>
+                            <li>
+                                Проверяем скин в игре.
                             </li>
                         </ol>
                     </details>

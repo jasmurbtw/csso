@@ -26,6 +26,11 @@ html, .layout {
     scrollbar-color: #797979 transparent;
 }
 
+summary {
+    padding-bottom: 0.35rem;
+    padding-top: 0.35rem;
+}
+
 .noto-sans-sc {
     font-family: "Noto Sans SC", 'Arial', sans-serif;
     font-optical-sizing: auto;
