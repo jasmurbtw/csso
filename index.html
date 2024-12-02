@@ -3,549 +3,1717 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="preload">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"/>
+    <link rel="preload" href="fonts/notosans_cyrillic.woff2" as="font" type="font/woff2"/>
+    <link rel="preload" href="fonts/notosans_latin.woff2" as="font" type="font/woff2"/>
+    <link rel="preload" href="fonts/cascadiamono.woff2" as="font" type="font/woff2"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS:SO Guides</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <div class="noto-sans-sc">
-        <div class="layout">
-            <header class="header collapsed">
-                <h3>Skins Guide.</h3>
-                <button id="toggle-sidebar" class="header-open-button">
-                    <span class="material-symbols-outlined">menu</span>
-                </button>
-                <nav class="sidebar">
-                    <ul>
-                        <li><a href="#chapter1">Глава 1: Скачивание программ.</a></li>
-                        <li><a href="#chapter2">Глава 2: Настройка программ.</a></li>
-                        <li><a href="#chapter3">Глава 3: Экспорт текстур.</a></li><br>
-                        <li><a href="pages/skins.html" target="_self">(WIP) CS:SO Skins</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main class="content">
-                <section id="chapter1">
-                    <h2>Скачивание программ.</h2>
-                    <p>Список всех программ:</p>
-                    <ol>
-                        <li><a href="https://7launcher.com/?lang=en" target="_blank">CS:GO</a>.</li>
-                        <li><a href="https://nemstools.github.io/pages/GCFScape-Download.html" target="_blank">GCFScape</a>.
-                            <a href="./images/gcfscape_installation.png" target="_blank" style="text-decoration: none">Screenshot</a></li>
-                        <li><a href="https://code.google.com/archive/p/texmod/downloads" target="_blank">TexMod (uMod)</a>.
-                            <a href="./images/umod.png" target="_blank" style="text-decoration: none">Screenshot</a></li>
-                        <li><a href="https://github.com/Sky-rym/VTFEdit-Reloaded/releases" target="_blank">VTFEdit Reloaded</a>.
-                            <a href="./images/vtfedit_reloaded.png" target="_blank" style="text-decoration: none">Screenshot</a></li>
-                    </ol>
-                </section>
-                <section id="chapter2">
-                    <h2>Настройка программ.</h2>
+    <nav class="header-main">
+        <div class="header-navbar">
+            <a href="skins.html" target="_self">CS:SO Skins</a>
+            <a href="https://www.youtube.com/@jasmurbtw" target="_blank">YouTube</a>
+            <a href="https://discord.gg/fEkJvmSySV" target="_blank">Discord</a>
+            <a href="https://steamcommunity.com/id/jasmurbtw/" target="_blank">Steam</a>
+        </div>
+        <button class="header-open-button"><img src="svg/menu.svg" style="font-size: 1.5rem;"></button>
+        <div class="header-misc"><br>
+            <a href="#chapter1">Глава 1: Скачивание программ</a>
+            <a href="#chapter2">Глава 2: Настройка программ</a>
+            <a href="#chapter3">Глава 3: Экспорт текстур.</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="chapter1">
+            <h1 class="summary-gradient" style="cursor: text;">Скачивание программ</h1>
+            Список всех программ:
+            <li><a href="https://7launcher.com/?lang=en" target="_blank">CS:GO</a></li>
+            <li><a href="https://nemstools.github.io/pages/GCFScape-Download.html" target="_blank">GCFScape</a>.
+            (<a class="screenshot" href="images/gcfscape_installation.png" target="_blank" style="text-decoration: none;">Screenshot</a>)</li>
+            <li><a href="https://code.google.com/archive/p/texmod/downloads" target="_blank">TexMod (uMod)</a>.
+            (<a class="screenshot" href="images/umod.png" target="_blank" style="text-decoration: none">Screenshot</a>)</li>
+            <li><a href="https://github.com/Sky-rym/VTFEdit-Reloaded/releases" target="_blank">VTFEdit Reloaded</a>.
+            (<a class="screenshot" href="images/vtfedit_reloaded.png" target="_blank" style="text-decoration: none">Screenshot</a>)</li>
+        </section>
+
+        <section id="chapter2">
+            <h1 class="summary-gradient" style="cursor: text;">Настройка программ</h1>
+            <h3>Настройка
+                <div class="block">
+                    <div class="text" style="font-size: 18px;"><img src="icons/uMod.ico"
+                        style="width: 15px;transform: translate(-1px,1px);pointer-events: none;user-select: none;"> uMod</div>
+                </div>
+            </h3>
+            В папке, куда ты распаковал
+            <div class="block">
+                <div class="text"><img src="icons/uMod.ico"
+                    style="width: 15px;transform: translate(-1px,2px);pointer-events: none;user-select: none;"> uMod</div>
+            </div>, найди <code>d3d9.dll</code>. Скопируй <code>d3d9.dll</code> в папку
+            <div class="block">
+                <div class="folder-icon">
+                    <img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                <div class="folder-text">bin</div>
+            </div> в папке установки
+            <div class="block">
+                <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                style="width: 15px;transform: translate(0,2px);
+                pointer-events: none;user-select: none;"> CS:GO</div>
+            </div>.
+            <details style="background-color: #2b2b2b;border-radius: 10px;padding-bottom: 1px;">
+                <summary>Куда копировать <code>d3d9.dll</code></summary>
+                Допустим, ты установил
+                <div class="block">
+                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                    style="width: 15px;transform: translate(0,2px);
+                    pointer-events: none;user-select: none;"> CS:GO</div>
+                </div> на рабочий стол по пути
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text">C:/Users/MyUserName/Desktop/CS:GO_7L</div>
+                </div>, тогда тебе нужно скопировать <code>d3d9.dll</code> в папку
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text">C:/Users/MyUserName/Desktop/CS:GO_7L/bin</div>
+                </div> (<a class="screenshot" href="images/d3d9.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).
+            </details>
+            Запусти
+            <div class="block">
+                <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                style="width: 15px;transform: translate(0,2px);
+                pointer-events: none;user-select: none;"> CS:GO</div>
+            </div>.<br>В
+            <div class="block">
+                <div class="text"><img src="icons/uMod.ico"
+                    style="width: 15px;transform: translate(-1px,2px);pointer-events: none;user-select: none;"> uMod</div>
+            </div> должна появиться вкладка <code>csgo</code>, открой её
+            (<a class="screenshot" href="images/umod_inject.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+            Нажми <code>Capture textures > ></code>, настрой нужные параметры
+            (<a class="screenshot" href="images/umod_template_settings.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+            Нажми на <code>Main</code>, а потом на <code>Save template as ...</code>
+            (<a class="screenshot" href="images/umod_template_save.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).
+            Сохрани файл как <code>csgo.txt</code>. В
+            <div class="block">
+                <div class="text"><img src="icons/uMod.ico"
+                    style="width: 15px;transform: translate(-1px,2px);pointer-events: none;user-select: none;"> uMod</div>
+            </div> в строке <code>Template</code> появится полный путь до <code>csgo.txt</code>
+            (<a class="screenshot" href="images/umod_template_saved.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+            Снова нажми на <code>Main</code>, а потом на <code>Set template as default</code>
+            (<a class="screenshot" href="images/umod_template_set_as_default.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+            Закрой
+            <div class="block">
+                <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                style="width: 15px;transform: translate(0,2px);
+                pointer-events: none;user-select: none;"> CS:GO</div>
+            </div>, запусти её заново. В верхнем левом углу появится такая надпись
+            (<a class="screenshot" href="images/csgo_d3d9_injected.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+            <h3>Настройка
+                <div class="block">
+                    <div class="text" style="color: #e9b963;font-size: 18px;"><img src="icons/csgo.ico"
+                    style="width: 15px;transform: translate(0,1px);
+                    pointer-events: none;user-select: none;"> CS:GO</div>
+                </div></h3>Открой настройки <code>Video</code>. Поставь <code>Model / Texture Detail</code>,
+            <code>Effect Detail</code> и <code>Shader Detail</code> на максимально возможные настройки
+            (<a class="screenshot" href="images/csgo_graphics_settings.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).
+        </section>
+
+        <section id="chapter3">
+            <h1 class="summary-gradient" style="cursor: text;">Экспорт текстур</h1>
+            Способ 1 подходит в большинстве случаев. Не позволяет экспортировать скины на ножи и перчатки.<br>
+            Способ 2 позволяет вытащить конкретный паттерн, скины на ножи и перчатки, но требует загрузки на карту.
+            <h3>Способ 1: <code>Workshop Workbench</code></h3>
+            <li style="color: #03C03C; font-weight: 900;">Более быстрый вариант экспорта с гибкой настройкой износа и прочих свойств.</li>
+            <li style="color: #BF4F51; font-weight: 900;">Отсутствует возможность выбрать конкретный числовой паттерн.</li>
+            <li style="color: #BF4F51; font-weight: 900;">Отсутствует возможность экспорта скинов на перчатки.</li>
+            <li style="color: #BF4F51; font-weight: 900;">Отсутствует возможность экспорта сгенерированных игрой
+            VGUI иконок ножей и перчаток из инвентаря.</li><br>
+            1) Открой <a href="https://stash.clash.gg" target="_blank">stash.clash.gg</a> (Сайт заблокирован в РФ).<br>
+            2) Найди нужный скин. Скопируй цифры из <code>Finish Catalog:</code>
+                (<a class="screenshot" href="images/csgostash_id.png" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+            3) Открой <code>csgo/scripts/items/items_game.txt</code>. Найди число из <code>Finish Catalog:</code>.
+                Скопируй всё, что выделено на скриншоте
+                (<a class="screenshot" href="images/notepad_copy.png" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+            4) Открой папку установки
+                <div class="block">
+                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                    style="width: 15px;transform: translate(0,2px);
+                    pointer-events: none;user-select: none;"> CS:GO</div>
+                </div> (там, где лежит <code>csgo.exe</code>). Создай в ней <code>.txt</code> файл с любым названием,
+                например <code>awp_gungnir.txt</code>. Открой его.<br>Вставь скопированный из <code>items_game.txt</code> текст.
+                Замени значение <code>Finish Catalog:</code> на <code>workshop_preview</code>
+                (<a class="screenshot" href="images/notepad_replace.png" target="_blank" style="text-decoration: none">Screenshot</a>).
+                Сохрани <code>awp_gungnir.txt</code>.<br>
+            5) Запусти
+                <div class="block">
+                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                    style="width: 15px;transform: translate(0,2px);
+                    pointer-events: none;user-select: none;"> CS:GO</div>
+                </div> и введи в консоль <code>workshop_workbench</code>. Выбери <code>AWP</code>
+                (<a class="screenshot" href="images/workshop_workbench_weapon.jpg" target="_blank"
+                style="text-decoration: none">Screenshot</a>).<br>Нажми <code>Load</code>
+                (<a class="screenshot" href="images/workshop_workbench_load.jpg" target="_blank"
+                style="text-decoration: none">Screenshot</a>), выбери <code>awp_gungnir.txt</code> и нажми <code>Open</code>
+                (<a class="screenshot" href="images/workshop_workbench_import_txt.jpg" target="_blank"
+                style="text-decoration: none">Screenshot</a>). Оружие изменит свой скин
+                (<a class="screenshot" href="images/workshop_workbench_imported.jpg"
+                target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+            6) Найди слайдер <code>Wear</code>
+                (<a class="screenshot" href="images/workshop_workbench_parameters.jpg" target="_blank"
+                    style="text-decoration: none">Screenshot</a>). Он отвечает за износ скина. Сдвинь его максимально влево
+                (<a class="screenshot" href="images/workshop_workbench_parameters2.jpg" target="_blank"
+                    style="text-decoration: none">Screenshot</a>).
+                <details style="background-color: #2b2b2b;border-radius: 10px;padding-bottom: 1px;">
+                    <summary>Что делать, если сбились параметры?</summary>
+                    Иногда бывает, что при импорте <code>.txt</code> шаблона некоторые параметры сбиваются (например, <code>wear_remap_min</code>
+                    и <code>wear_remap_max</code>, которые отвечают за минимальное и максимальное состояние износа текстуры соответственно) из-за
+                    того, что изначально в <code>items_game.txt</code> их значения не указаны.<br>В таком случае нужно зайти на
+                    <a href="https://stash.clash.gg" target="_blank">stash.clash.gg</a>, откуда мы брали значение <code>Finish Catalog:</code>
+                    и посмотреть диапазон износа (<a class="screenshot" href="images/clash_float.jpg" target="_blank"
+                    style="text-decoration: none">Screenshot</a>), где число слева - <code>wear_remap_min</code>, а число справа -
+                    <code>wear_remap_max</code>.<br>После этого нужно внести эти числа в <code>workshop_workbench</code> в соответствующие поля.
+                </details>
+            7) В
+                <div class="block">
+                    <div class="text"><img src="icons/uMod.ico"
+                        style="width: 15px;transform: translate(-1px,2px);pointer-events: none;user-select: none;"> uMod</div>
+                </div> в полях <code>Back</code>, <code>Save</code> и <code>Next</code> ты указал клавиши,
+                которые за них отвечают.<br>Нажимай клавишу <code>Back</code> до тех пор, пока все оружие не станет зелёным
+                (<a class="screenshot" href="images/workshop_workbench_weapon_green.jpg" target="_blank"
+                style="text-decoration: none">Screenshot</a>). Нажми клавишу <code>Save</code>.
+                <details style="background-color: #2b2b2b; border-radius: 10px;padding-bottom: 1px;">
+                    <summary>Примечание</summary>
+                    У скинов из коллекции <code>Printstream</code>, например <code>M4A1-S | Printstream</code>,
+                    оружие вместо зелёного может стать радужным
+                    (<a class="screenshot" href="images/workshop_workbench_weapon_m4a1s_printstream.jpg" target="_blank"
+                    style="text-decoration: none">Screenshot</a>).
+                </details> Нажимай клавишу <code>Back</code>/<code>Next</code>, пока оружие не станет неестественно светлым
+                (<a class="screenshot" href="images/workshop_workbench_weapon_white.jpg" target="_blank"
+                    style="text-decoration: none">Screenshot</a>). Нажми на клавишу <code>Save</code>.<br>
+            8) В папке, указанной в
+                <div class="block">
+                    <div class="text"><img src="icons/uMod.ico"
+                        style="width: 15px;transform: translate(-1px,2px);pointer-events: none;user-select: none;"> uMod</div>
+                </div> для сохранения текстур появятся 2 файла в формате <code>.tga</code>
+                (<a class="screenshot" href="images/ripped.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+                Один с приставкой <code>csgo_W256_H256.tga</code> - это текстура экспоненты.
+                <details style="background-color: #2b2b2b; border-radius: 10px;padding-bottom: 1px;">
+                    <summary>Примечание</summary>
+                    В зависимости от значения <code>view_model_exponent_override_size</code> в <code>items_game.txt</code>
+                    имя может быть <code>csgo_W512_H512.tga</code> или <code>csgo_W1024_H1024.tga</code>.
+                </details>
+                Второй с приставкой <code>csgo_W2048_H2048.tga</code> - основная текстура скина.<br>
+                Но помимо этих файлов, тебе нужно вытащить карту нормалей из файлов
+                <div class="block">
+                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                    style="width: 15px;transform: translate(0,2px);
+                    pointer-events: none;user-select: none;"> CS:GO</div>
+                </div>. Для этого открой папку
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text" style="line-height: 1.4;">csgo</div>
+                </div> в папке установки
+                <div class="block">
+                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                    style="width: 15px;transform: translate(0,2px);
+                    pointer-events: none;user-select: none;"> CS:GO</div>
+                </div>, пролистай до файла <code>pak01_dir.vpk</code> и
+                открой его через
+                <div class="block">
+                    <div class="text" style="color: #4337c2;"><img src="icons/gcfscape.ico"
+                    style="width: 15px;transform: translate(0,2px);
+                    pointer-events: none;user-select: none;"> GCFScape</div>
+                </div>(<a class="screenshot" href="images/gcfscape.jpg" target="_blank"
+                    style="text-decoration: none">Screenshot</a>).<br>
+                В
+                <div class="block">
+                    <div class="text" style="color: #4337c2;"><img src="icons/gcfscape.ico"
+                    style="width: 15px;transform: translate(0,2px);
+                    pointer-events: none;user-select: none;"> GCFScape</div>
+                </div> перейди в папку
+                    <div class="block">
+                        <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                        <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/customization/paints</div>
+                    </div>.<br>
+                Внутри этой папки открой папку, соответствующую стилю скина, который мы использовали. Стиль можно найти в
+                файле <code>awp_gungnir.txt</code>, где будет строка <code>"style" "9"</code>
+                (<a class="screenshot" href="images/notepad_style.jpg" target="_blank" style="text-decoration: none">Screenshot</a>),
+                что означает папку
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text" style="line-height: 1.4;">gunsmith</div>
+                </div>.<br>Далее вновь открой <code>awp_gungnir.txt</code> и найди строку
+                <code>"normal" "awp_gungnir_normal"</code>
+                (<a class="screenshot" href="images/notepad_normal.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).
+                Это и есть название карты нормалей, которую нужно найти и скопировать на рабочий стол.
+                <details style="background-color: #2b2b2b; border-radius: 10px;padding-bottom: 0px;">
+                    <summary>
+                        Какую папку открывать в
+                        <div class="block">
+                            <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                            <div class="folder-text" style="line-height: 1.4;">paints</div>
+                        </div>, основываясь на <code>style</code>
+                    </summary>
+                    Ниже написаны цифры стиля и что они означают. Просто открой папку, которая указана
+                    напротив стиля.<br>
+                    Например, если у нас стиль 7 (<code>"style" "7"</code>) в <code>awp_gungnir.txt</code>, то
+                    мы открываем
+                    папку
+                    <div class="block">
+                        <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                        <div class="folder-text" style="line-height: 1.4;">custom</div>
+                    </div>, а если стиль 5 - то
+                    <div class="block">
+                        <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                        <div class="folder-text" style="line-height: 1.4;">anodized_multi</div>.
+                    </div><br>
+                    2 - <div class="block">
+                        <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                        <div class="folder-text" style="line-height: 1.4;">hydrographic</div>
+                    </div><br>
+                    3 - <div class="block">
+                        <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                        <div class="folder-text" style="line-height: 1.4;">spray</div>
+                    </div><br>
+                    5 - <div class="block">
+                        <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                        <div class="folder-text" style="line-height: 1.4;">anodized_multi</div>
+                    </div><br>
+                    6 - <div class="block">
+                        <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                        <div class="folder-text" style="line-height: 1.4;">anodized_air</div>
+                    </div><br>
+                    7 - <div class="block">
+                        <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                        <div class="folder-text" style="line-height: 1.4;">custom</div>
+                    </div><br>
+                    8 - <div class="block">
+                        <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                        <div class="folder-text" style="line-height: 1.4;">antiqued</div>
+                    </div><br>
+                    9 - <div class="block">
+                        <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                        <div class="folder-text" style="line-height: 1.4;">gunsmith</div>
+                    </div><br>
+                </details>
+            9) Открой
+                <div class="block">
+                    <div class="text" style="color: #50cdff;"><img src="icons/vtfedit.ico"
+                    style="width: 15px;transform: translate(0,2px);
+                    pointer-events: none;user-select: none;"> VTFEdit Reloaded</div>
+                </div>, нажми кнопку <code>Import</code>
+                (<a class="screenshot" href="images/vtfedit_import.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+                Выбери текстуру с префиксом <code>csgo_W256_H256</code> (<code>csgo_W512_H512</code> либо <code>csgo_W1024_H1024</code>),
+                нажми <code>Open</code>.<br> В
+                <div class="block">
+                    <div class="text" style="color: #50cdff;"><img src="icons/vtfedit.ico"
+                    style="width: 15px;transform: translate(0,2px);
+                    pointer-events: none;user-select: none;"> VTFEdit Reloaded</div>
+                </div> откроется окошко с параметрами импорта, выстави всё, как на скриншоте и нажми <code>OK</code>
+                (<a class="screenshot" href="images/vtfedit_import_options.jpg" target="_blank"style="text-decoration: none">Screenshot</a>).
+                <br>Нажми кнопку <code>Save</code>
+                (<a class="screenshot" href="images/vtfedit_save.jpg" target="_blank" style="text-decoration: none">Screenshot</a>)
+                и сохрани файл на рабочий стол с названием <code>csgo_W256_H256</code> (если выбрал текстуру с префиксом
+                <code>csgo_W256_H256</code>), <code>csgo_W512_H512</code> (если выбрал текстуру с префиксом <code>csgo_W512_h512</code>)
+                или <code>csgo_W1024_H1024</code> (если выбрал текстуру с префиксом <code>csgo_W1024_h1024</code>).<br>
+                Повтори этот шаг для второй текстуры (с префиксом <code>csgo_W2048_H2048</code>),
+                сохранив её с именем <code>csgo_W2048_H2048</code>.<br>
+            10) Открой папку, где установлена
+                <div class="block">
+                    <div class="text" style="color: #f2ca3e;"><img src="icons/csso.ico"
+                    style="width: 15px;transform: translate(0,2px);
+                    pointer-events: none;user-select: none;"> CS:SO</div>
+                </div>. Открой <code>csso_pak_dir.vpk</code> с помощью
+                <div class="block">
+                    <div class="text" style="color: #4337c2;"><img src="icons/gcfscape.ico"
+                    style="width: 15px;transform: translate(0,2px);
+                    pointer-events: none;user-select: none;"> GCFScape</div>
+                </div>.<br>Перейди в папку
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/v_models</div>
+                </div>, скопируй нужную папку на рабочий стол.<br>Перейди в папку
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/w_models</div>
+                </div>, скопируй нужную папку на рабочий стол.
+                <div class="summary-rounded">
                     <details>
-                        <summary>Настройка <code>uMod</code>.</summary>
-                        <p>
-                            В папке, куда ты распаковал <code>uMod</code>, найди "<code>d3d9.dll</code>", скопируй её в
-                            папку
-                            "<code>bin</code>", куда ты установил <code>CS:GO</code> (Допустим, ты установил
-                            <code>CS:GO</code> на рабочий стол по пути
-                            "<code>C:/Users/MyUserName/Desktop/CS:GO_7L</code>", тогда тебе нужно скопировать
-                            "<code>d3d9.dll</code>" в папку "<code>bin</code>" по пути
-                            "<code>C:/Users/MyUserName/Desktop/CS:GO_7L/bin</code>").
-                            <a href="images/d3d9.jpg" target="_blank" style="text-decoration: none">Screenshot</a>
-                        </p>
-                        <p>
-                            Потом ты запускаешь <code>CS:GO</code>.<br>
-                            <code>uMod</code> должен автоматически подхватить её, в
-                            результате чего должна появиться соответствующая плашка в <code>uMod</code>.
-                           <a href="images/umod_inject.jpg" target="_blank" style="text-decoration: none">Screenshot</a><br>
-                           Далее нам нужно нажать на "<code>Capture textures > ></code>" и настроить нужные нам пункты.
-                           <a href="images/umod_template_settings.jpg" target="_blank" style="text-decoration: none">Screenshot</a><br>
-                           После нужно нажать на "<code>Main</code>", а потом на "<code>Save template</code>".<br>
-                           Откроется диалог сохранения файла в папке "<code>templates</code>", которая находится в
-                           папке установки <code>uMod</code>, куда нам и нужно сохранить полученный <code>.txt</code>
-                           файл с названием "<code>csgo.txt</code>".<br>Если вы всё сделали правильно, то в <code>uMod</code>
-                           появится такая строчка.
-                           <a href="images/umod_template_saved.jpg" target="_blank" style="text-decoration: none">Screenshot</a><br>
-                           Потом нужно еще раз нажать на
-                           "<code>Main</code>", а потом на "<code>Set template as default</code>".
-                           <a href="images/umod_template_set_as_default.jpg" target="_blank" style="text-decoration: none">Screenshot</a><br>
-                           После этого нужно закрыть <code>CS:GO</code> и заново её запустить. Если вы всё сделали правильно, то в
-                           <code>CS:GO</code> в левом верхнем углу появится такая надпись.
-                           <a href="images/csgo_d3d9_injected.jpg" target="_blank" style="text-decoration: none">Screenshot</a>
-                        </p>
+                        <summary>
+                            Какая папка тебе нужна в
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">v_models</div>
+                            </div>
+                        </summary>
+                        Выбор папки зависит от типа оружия, к которому применён скин.
+                        <details>
+                            <summary>
+                                Pistols:
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/v_models</div>
+                                </div>
+                            </summary>
+                            CZ75-Auto -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">pist_cz_75</div>
+                            </div><br>
+                            Desert Eagle -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">pist_deagle</div>
+                            </div><br>
+                            Dual Berettas -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">pist_elite</div>
+                            </div><br>
+                            Five-SeveN -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">pist_fiveseven</div>
+                            </div><br>
+                            Glock-18 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">pist_glock18</div>
+                            </div><br>
+                            P2000 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">pist_hkp2000</div>
+                            </div><br>
+                            P250 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">pist_p250</div>
+                            </div><br>
+                            R8 Revolver -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">pist_revolver</div>
+                            </div><br>
+                            Tec-9 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">pist_tec9</div>
+                            </div><br>
+                            USP-S -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">pist_usp</div>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>
+                                SMGs:
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/v_models</div>
+                                </div>
+                            </summary>
+                            MAC-10 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">smg_mac10</div>
+                            </div><br>
+                            MP5-SD -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">smg_mp5sd</div>
+                            </div><br>
+                            MP7 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">smg_mp7</div>
+                            </div><br>
+                            MP9 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">smg_mp9</div>
+                            </div><br>
+                            P90 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">smg_p90</div>
+                            </div><br>
+                            PP-Bizon -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">smg_bizon</div>
+                            </div><br>
+                            UMP-45 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">smg_ump45</div>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>
+                                Rifles:
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/v_models</div>
+                                </div>
+                            </summary>
+                            AK-47 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">rif_ak47</div>
+                            </div><br>
+                            AUG -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">rif_aug</div>
+                            </div><br>
+                            AWP -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">snip_awp</div>
+                            </div><br>
+                            FAMAS -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">rif_famas</div>
+                            </div><br>
+                            G3SG1 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">snip_g3sg1</div>
+                            </div><br>
+                            Galil AR -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">rif_galilar</div>
+                            </div><br>
+                            M4A1-S -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">rif_m4a1_silencer</div>
+                            </div><br>
+                            M4A4 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">rif_m4a4</div>
+                            </div><br>
+                            SCAR-20 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">snip_scar20</div>
+                            </div><br>
+                            SG 553 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">rif_sg556</div>
+                            </div><br>
+                            SSG 08 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">snip_ssg08</div>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>
+                                Heavies:
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/v_models</div>
+                                </div>
+                            </summary>
+                            M249 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">mach_m249para</div>
+                            </div><br>
+                            MAG-7 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">shot_mag7</div>
+                            </div><br>
+                            Negev -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">mach_negev</div>
+                            </div><br>
+                            Nova -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">shot_nova</div>
+                            </div><br>
+                            Sawed-Off -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">shot_sawedoff</div>
+                            </div><br>
+                            XM1014 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">shot_xm1014</div>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>
+                                Knives:
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/v_models</div>
+                                </div>
+                            </summary>
+                            Bayonet -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_bayonet</div>
+                            </div><br>
+                            Bowie Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_survival_bowie</div>
+                            </div><br>
+                            Butterfly Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_butterfly</div>
+                            </div><br>
+                            Classic Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_css</div>
+                            </div><br>
+                            Falchion Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_falchion_advanced</div>
+                            </div><br>
+                            Flip Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_flip</div>
+                            </div><br>
+                            Gut Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_gut</div>
+                            </div><br>
+                            Huntsman Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_tactical</div>
+                            </div><br>
+                            Karambit -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_karam</div>
+                            </div><br>
+                            M9 Bayonet -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_m9_bay</div>
+                            </div><br>
+                            Navaja Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_gypsy_jack</div>
+                            </div><br>
+                            Nomad Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_outdoor</div>
+                            </div><br>
+                            Paracord Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_cord</div>
+                            </div><br>
+                            Shadow Daggers -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_push</div>
+                            </div><br>
+                            Skeleton Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_skeleton</div>
+                            </div><br>
+                            Stiletto Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_stiletto</div>
+                            </div><br>
+                            Survival Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_canis</div>
+                            </div><br>
+                            Talon Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_widowmaker</div>
+                            </div><br>
+                            Ursus Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">knife_ursus</div>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>
+                                Gloves:
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/v_models/arms</div>
+                                </div>
+                            </summary>
+                            Bloodhound Gloves -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">glove_bloodhound</div>
+                            </div><br>
+                            Bloodhound Perfect World Gloves -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">glove_bloodhound</div>
+                            </div><br>
+                            Broken Fang Gloves -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">glove_bloodhound</div>
+                            </div><br>
+                            Driver Gloves -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">glove_slick</div>
+                            </div><br>
+                            Hand Wraps -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">glove_handwrap_leathery</div>
+                            </div><br>
+                            Hydra Gloves -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">glove_bloodhound</div>
+                            </div><br>
+                            Moto Gloves -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">glove_motorcycle</div>
+                            </div><br>
+                            Specialist Gloves -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">glove_specialist</div>
+                            </div><br>
+                            Sport Gloves -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">glove_sporty</div>
+                            </div>
+                        </details>
                     </details>
                     <details>
-                        <summary>Настройка <code>CS:GO</code>.</summary>
-                        <p>
-                            Открой настройки <code>CS:GO</code>, переключись на вкладку "<code>Video</code>".<br>Поставь
-                            "<code>Model / Texture Detail</code>", "<code>Effect Detail</code>" и
-                            "<code>Shader Detail</code>" на максимально возможные настройки.
-                            <a href="images/csgo_graphics_settings.jpg" target="_blank" style="text-decoration: none">Screenshot</a>
-                        </p>
+                        <summary>
+                            Какая папка тебе нужна в
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_models</div>
+                            </div>
+                        </summary>
+                        Выбор папки зависит от типа оружия, к которому применён скин.
+                        <details>
+                            <summary>
+                                Pistols:
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/w_models</div>
+                                </div>
+                            </summary>
+                            CZ75-Auto -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_pist_cz_75</div>
+                            </div><br>
+                            Desert Eagle -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_pist_deagle</div>
+                            </div><br>
+                            Dual Berettas -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_pist_elite</div>
+                            </div><br>
+                            Five-SeveN -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_pist_fiveseven</div>
+                            </div><br>
+                            Glock-18 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_pist_glock18</div>
+                            </div><br>
+                            P2000 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_pist_hkp2000</div>
+                            </div><br>
+                            P250 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_pist_p250</div>
+                            </div><br>
+                            R8 Revolver -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_pist_revolver</div>
+                            </div><br>
+                            Tec-9 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_pist_tec9</div>
+                            </div><br>
+                            USP-S -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_pist_usp</div>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>
+                                SMGs:
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/w_models</div>
+                                </div>
+                            </summary>
+                            MAC-10 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_smg_mac10</div>
+                            </div><br>
+                            MP5-SD -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_smg_mp5sd</div>
+                            </div><br>
+                            MP7 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_smg_mp7</div>
+                            </div><br>
+                            MP9 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_smg_mp9</div>
+                            </div><br>
+                            P90 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_smg_p90</div>
+                            </div><br>
+                            PP-Bizon -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_smg_bizon</div>
+                            </div><br>
+                            UMP-45 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_smg_ump45</div>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>
+                                Rifles:
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/w_models</div>
+                                </div>
+                            </summary>
+                            AK-47 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_rif_ak47</div>
+                            </div><br>
+                            AUG -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_rif_aug</div>
+                            </div><br>
+                            AWP -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_snip_awp</div>
+                            </div><br>
+                            FAMAS -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_rif_famas</div>
+                            </div><br>
+                            G3SG1 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_snip_g3sg1</div>
+                            </div><br>
+                            Galil AR -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_rif_galilar</div>
+                            </div><br>
+                            M4A1-S -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_rif_m4a1_silencer</div>
+                            </div><br>
+                            M4A4 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_rif_m4a4</div>
+                            </div><br>
+                            SCAR-20 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_snip_scar20</div>
+                            </div><br>
+                            SG 553 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_rif_sg556</div>
+                            </div><br>
+                            SSG 08 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_snip_ssg08</div>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>
+                                Heavies:
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/w_models</div>
+                                </div>
+                            </summary>
+                            M249 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_mach_m249para</div>
+                            </div><br>
+                            MAG-7 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_shot_mag7</div>
+                            </div><br>
+                            Negev -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_mach_negev</div>
+                            </div><br>
+                            Nova -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_shot_nova</div>
+                            </div><br>
+                            Sawed-Off -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_shot_sawedoff</div>
+                            </div><br>
+                            XM1014 -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_shot_xm1014</div>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>
+                                Knives:
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/w_models</div>
+                                </div>
+                            </summary>
+                            Bayonet -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_bayonet</div>
+                            </div><br>
+                            Bowie Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_survival_bowie</div>
+                            </div><br>
+                            Butterfly Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_butterfly</div>
+                            </div><br>
+                            Classic Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_css</div>
+                            </div><br>
+                            Falchion Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_falchion_advanced</div>
+                            </div><br>
+                            Flip Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_flip</div>
+                            </div><br>
+                            Gut Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_gut</div>
+                            </div><br>
+                            Huntsman Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_tactical</div>
+                            </div><br>
+                            Karambit -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_karam</div>
+                            </div><br>
+                            M9 Bayonet -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_m9_bay</div>
+                            </div><br>
+                            Navaja Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_gypsy_jack</div>
+                            </div><br>
+                            Nomad Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_outdoor</div>
+                            </div><br>
+                            Paracord Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_cord</div>
+                            </div><br>
+                            Shadow Daggers -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_push</div>
+                            </div><br>
+                            Skeleton Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_skeleton</div>
+                            </div><br>
+                            Stiletto Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_stiletto</div>
+                            </div><br>
+                            Survival Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_canis</div>
+                            </div><br>
+                            Talon Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_widowmaker</div>
+                            </div><br>
+                            Ursus Knife -
+                            <div class="block">
+                                <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                                <div class="folder-text" style="line-height: 1.4;">w_knife_ursus</div>
+                            </div>
+                        </details>
                     </details>
-                </section>
-                <section id="chapter3">
-                    <h2>Экспорт текстур.</h2>
-                    Способ 1 подходит в большинстве случаев.
-                    <br>Способ 2 позволяет экспортировать конкретный паттерн, но требует загрузки на карту.</br>
-                    <p></p>
-                    <details>
-                        <summary>Способ 1: <code>Workshop Workbench</code></summary>
-                        <ul>
-                            <li style="color: #03C03C">Более быстрый вариант экспорта с гибкой настройкой износа и
-                                прочих
-                                свойств.</li>
-                            <li style="color: #BF4F51">Отсутствует возможность выбрать конкретный числовой паттерн.
-                            </li>
-                            <li style="color: #BF4F51">Отсутствует возможность экспорта скинов на перчатки.</li>
-                            <li style="color: #BF4F51">Отсутствует возможность экспорта сгенерированных игрой
-                                VGUI иконок ножей и перчаток из инвентаря.</li>
-                        </ul>
-                        <p>Инструкция:</p>
+                </div>
+            11) Открой папку
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text">csso/custom</div>
+                </div>.
+                <details style="background-color: #2b2b2b;border-radius: 10px">
+                    <summary>Стандартная папка установки
+                        <div class="block">
+                            <div class="text" style="color: #f2ca3e;"><img src="icons/csso.ico"
+                            style="width: 15px;transform: translate(0,2px);
+                            pointer-events: none;user-select: none;"> CS:SO</div>
+                        </div>
+                    </summary>
+                    Обычно
+                    <div class="block">
+                        <div class="text" style="color: #f2ca3e;"><img src="icons/csso.ico"
+                        style="width: 15px;transform: translate(0,2px);
+                        pointer-events: none;user-select: none;"> CS:SO</div>
+                    </div> установлена по пути
+                    <div class="block">
+                        <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                        <div class="folder-text">C:/Program Files (x86)/Steam/steamapps/sourcemods/csso</div>
+                    </div>.
+                </details>
+                Создай в ней папку, например
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/create-new-folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text">awp_gungnir</div>
+                </div>, открой её.<br>
+                Внутри создай папки
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/create-new-folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text">materials/models/weapons/v_models</div>
+                </div> и
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/create-new-folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text">materials/models/weapons/w_models</div>
+                </div>
+                (<a class="screenshot" href="images/explorer_folders.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+                В папку
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text">materials/models/weapons/v_models</div>
+                </div> скопируй папку
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text">snip_awp</div>
+                </div> с рабочего стола.
+                В папку
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text">materials/models/weapons/w_models</div>
+                </div> скопируй папку
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text">w_snip_awp</div>
+                </div> с рабочего стола.<br>
+                Удали все <code>.vtf</code> файлы из папок
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text">materials/models/weapons/v_models</div>
+                </div> и
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text">materials/models/weapons/w_models</div>
+                </div>.<br>
+                Скопируй в папку
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text">materials/models/weapons/v_model/snip_awp</div>
+                </div> файлы <code>csgo_W256_H256.vtf</code> и <code>csgo_W2048_H2048.vtf</code> из 9 шага и
+                <code>awp_gungnir_normal.vtf</code> из 8 шага
+                (<a class="screenshot" href="images/explorer_delete.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+                Открой папку
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text">materials/models/weapons/v_models/snip_awp</div>
+                </div>. В ней открой <code>awp.vmt</code> через любой текстовый редактор.<br>
+                В <code>awp.vmt</code> удали все строчки, начинающиеся с <code>$envmap</code>
+                (<a class="screenshot" href="images/vmt_notepad.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).
+                Найди строку <code>$basetexture</code> и <code>$phongexponenttexture</code>
+                (<a class="screenshot" href="images/notepad_textures.jpg" target="_blank"
+                    style="text-decoration: none">Screenshot</a>).<br>
+                Замени <code>awp_exponent</code> в строке <code>$phongexponenttexture</code> на имя первой текстуры
+                (<code>csgo_W256_H256</code>/<code>csgo_W512_H512</code>/<code>csgo_W1024_H1024</code>),
+                а <code>awp</code> в строке <code>$basetexture</code> на имя первой текстуры
+                (<code>csgo_W2048_H2048</code>).<br>
+                Открой <code>awp_gungnir.txt</code>. Скопируй нужные параметры в <code>awp.vmt</code>
+                (<a class="screenshot" href="images/txt_parameters.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).
+                <details style="background-color: #2b2b2b; border-radius: 10px;padding-bottom: 1px;">
+                    <summary>Параметры, которые нужно скопировать в <code>.vmt</code> файл</summary>
+                    Если встретишь какой-то из этих параметров в <code>.txt</code> шаблоне,
+                    то обязательно скопируй их в <code>.vmt</code> файл.<br>
+                    1) <code>"phongalbedoboost"</code><br>
+                    2) <code>"normal"</code><br>
+                    3) <code>"pearlescent"</code>
+                </details>
+                В <code>awp.vmt</code> исправь <code>"normal" "awp_gungnir_normal"</code> на
+                <code>"bumpmap" "models\weapons\v_models\snip_awp\awp_gungnir_normal"</code>
+                <details style="background-color: #2b2b2b; border-radius: 10px;padding-bottom: 1px;">
+                    <summary>Как получилось <code>"bumpmap" "models\weapons\v_models\snip_awp\awp_gungnir_normal"</code></summary>
+                    В строке <code>$basetexture</code> в <code>awp.vmt</code> указан путь до текстуры оружия, например:
+                    <code>"$basetexture" "models\weapons\v_models\snip_awp\snip_awp"</code>.<br>
+                    Скопируй путь <code>models\weapons\v_models\snip_awp\</code> и вставь его перед
+                    <code>awp_gungnir_normal</code> в строке <code>"normal" "awp_gungnir_normal"</code>.<br>
+                    Получится строка <code>"normal" "models\weapons\v_models\snip_awp\awp_gungnir_normal"</code>.<br>
+                    Затем замени <code>"normal"</code> на <code>"$bumpmap"</code>, чтобы получилось
+                    <code>"$bumpmap" "models\weapons\v_models\snip_awp\awp_gungnir_normal"</code>
+                    (<a class="screenshot" href="images/vmt_edited.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).
+                    <details style="background-color: #101010;border-radius: 10px;padding-bottom: 2px;margin-right: 5px;margin-bottom: 4px;">
+                        <summary>Важно!</summary>
                         <ol>
-                            <li>Открой <a href="https://stash.clash.gg" target="_blank">stash.clash.gg</a>.
-                                (Сайт заблокирован в РФ).</li>
-                            <li>Найди нужный скин и скопируй цифровое значение его "<code>Finish Catalog:</code>".
-                                <a href="images/csgostash_id.png" target="_blank" style="text-decoration: none">Screenshot</a></li>
-                            <li>Открой файл "<code>items_game.txt</code>" по пути
-                                "<code>КОРНЕВАЯ_ПАПКА_УСТАНОВКИ_CS:GO/csgo/scripts/items</code>"
-                                через любой текстовый редактор. (Допустим, ты установил <code>CS:GO</code>
-                                на рабочий стол по пути "<code>C:/Users/MyUserName/Desktop/CS:GO_7L</code>",
-                                тогда тебе нужно открыть папку "<code>csgo</code>",
-                                потом открыть папку "<code>scripts</code>", а потом открыть папку "<code>items</code>"
-                                и в ней открыть файл "<code>items_game.txt</code>").</li>
-                            <li>В "<code>items_game.txt</code>" найди скопированное числовое значение
-                                "<code>Finish Catalog:</code>".
-                                <a href="images/notepad_search.png" target="_blank"
-                                style="text-decoration: none">Screenshot</a></li>
-                            <li>Скопируй всё, что выделено на скриншоте.
-                                <a href="images/notepad_copy.png" target="_blank"
-                                style="text-decoration: none">Screenshot</a></li>
-                            <li>Открой корневую папку установки <code>CS:GO</code>.<br>
-                                Создай в ней "<code>.txt</code>" файл с любым названием,
-                                например "<code>awp_gungnir.txt</code>".<br>Открой его через любой текстовый редактор
-                                и вставь скопированный тобою из "<code>items_game.txt</code>" текст.<br>
-                                Замени найденный тобою ранее числовое значение "<code>Finish Catalog:</code>"
-                                на "<code>workshop_preview</code>" (<a href="images/notepad_replace.png" target="_blank"
-                                style="text-decoration: none">Screenshot</a>)
-                                .<br>Сохрани "<code>awp_gungnir.txt</code>".
-                            </li>
-                            <li>Запусти <code>CS:GO</code>, открой внутриигровую консоль и введи в неё
-                                "<code>workshop_workbench</code>".<br>Откроется окошко мастерской.
-                                <a href="images/workshop_workbench_start.jpg" target="_blank"
-                                style="text-decoration: none">Screenshot</a></li>
-                            <li>В открывшемся окне найди надпись "<code>AK-47</code>"
-                                (<a href="images/workshop_workbench_weapon.jpg" target="_blank"
-                                style="text-decoration: none">Screenshot</a>), нажми на треугольник и выбери
-                                из выпадающего списка оружие, на которое применится желаемый скин
-                                (в данном случае это "<code>AWP</code>").<br>Найди кнопку "<code>Load</code>" и нажми на неё
-                                (<a href="images/workshop_workbench_load.jpg" target="_blank"
-                                style="text-decoration: none">Screenshot</a>).<br>Выбери заранее сделанный
-                                "<code>awp_gungnir.txt</code>" и нажми кнопку "<code>Open</code>"
-                                (<a href="images/workshop_workbench_import_txt.jpg" target="_blank"
-                                style="text-decoration: none">Screenshot</a>).<br>Если ты все сделал верно, то скин успешно
-                                применится на оружие (<a href="images/workshop_workbench_imported.jpg" target="_blank"
-                                style="text-decoration: none">Screenshot</a>).
-                            </li>
-                            <li>Найди слайдер "<code>Wear</code>"
-                                (<a href="images/workshop_workbench_parameters.jpg" target="_blank"
-                                style="text-decoration: none">Screenshot</a>) и сдвинь его максимально влево
-                                (<a href="images/workshop_workbench_parameters2.jpg" target="_blank"
-                                style="text-decoration: none">Screenshot</a>).<br>Таким образом можно настроить износ скина
-                                (В данном случае <code>Factory New</code>).
-                                    <details style="background: #1b1b1b;">
-                                        <summary style="color: #E09540">Важно.</summary>
-                                        <ol>
-                                        Иногда случается такое, что при импорте <code>.txt</code> некоторые параметры сбиваются
-                                            (например "<code>wear_remap_min</code>" и "<code>wear_remap_max</code>",
-                                            которые отвечают за минимальное и максимальное состояние износа текстуры)
-                                            из-за того, что изначально в "<code>items_game.txt</code>" они не указаны.<br>
-                                            В таком случае, нужно зайти на сайт
-                                            <a href="https://stash.clash.gg" target="_blank">stash.clash.gg</a>, откуда мы брали
-                                            значение "<code>Finish Catalog:</code>" и посмотреть там диапазон износа
-                                            (<a href="images/clash_float.jpg" target="_blank"
-                                style="text-decoration: none">Screenshot</a>), где число слева - "<code>wear_remap_min</code>",
-                                а число справа - "<code>wear_remap_max</code>".</ol>
-                                    </details>
-                            </li>
-                            <li>В программе <code>uMod</code> мы указывали клавиши, на которые будем "листать" текстуры.<br>
-                                В моем случае "Back" - стрелочка влево, "Save" - стрелочка вверх, "Next" - стрелочка вправо.<br>
-                                Таким образом, я жму стрелочку влево до тех пор, пока все оружие не станет зеленым
-                                (<a href="images/workshop_workbench_weapon_green.jpg" target="_blank"
-                                style="text-decoration: none">Screenshot</a>. Но, у таких скинов как "<code>M4A1-S | Printstream</code>"
-                                оружие вместо зелёного может стать радужным
-                                (<a href="images/workshop_workbench_weapon_m4a1s_printstream.jpg" target="_blank"
-                                style="text-decoration: none">Screenshot</a>)), а потом жму стрелочку вверх, чтобы сохранить текстуру скина.<br>
-                                После я жму стрелочку влево/вправо до тех пор, пока все оружие неестественно посветлеет
-                                (<a href="images/workshop_workbench_weapon_white.jpg" target="_blank"
-                                style="text-decoration: none">Screenshot</a> и жму стрелочку вверх чтобы сохранить и эту текстуру.
-                            </li>
-                            <li>В папке, которую мы указали в <code>uMod</code> (куда будут сохраняться текстуры)
-                                появилось 2 файла в формате <code>.tga</code>
-                                (<a href="images/ripped.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
-                                Тот, что с приставкой "<code>csgo_W256_H256</code>" (иногда "<code>csgo_W512_H512</code>"
-                                либо "<code>csgo_W1024_H1024</code>") - текстура экспоненты, а тот, что с приставкой
-                                "<code>csgo_W2048_H2048</code>" - основная текстура скина.<br>Но, помимо этого, нам нужно еще достать
-                                карту нормалей из файлов <code>CS:GO</code>.<br>Сделать это можно, открыв корневую папку
-                                <code>CS:GO</code>, а в ней открыть папку "<code>csgo</code>"
-                                (Допустим, ты установил <code>CS:GO</code> на рабочий стол по пути
-                            "<code>C:/Users/MyUserName/Desktop/CS:GO_7L</code>", тогда тебе нужно открыть папку
-                            "<code>csgo</code>" по пути "<code>C:/Users/MyUserName/Desktop/CS:GO_7L/csgo</code>)".<br>
-                            Далее ты листаешь в самый низ папки "<code>csgo</code>", пока не увидишь "<code>pak01_dir.vpk</code>".<br>
-                            Этот <code>.vpk</code> файл нужно открыть через "<code>GCFScape</code>"
-                            (<a href="images/gcfscape.jpg" target="_blank"
-                            style="text-decoration: none">Screenshot</a>).<br>Далее в GCFScape нужно открыть папку "<code>paints</code>"
-                            по пути "<code>materials/models/weapons/customization/</code>", а в ней открыть папку, основываясь на стиле
-                            скина, который мы делали (стиль можно узнать, если открыть "<code>awp_gungnir.txt</code>",
-                            который мы создали ранее.
-                            <details style="background: #1b1b1b;">
-                                <summary style="color: #E09540">Какую папку открывать в <code>"paints"</code></summary>
-                                <ol>Ниже написаны цифры стиля и что они означают.<br>Просто открой папку, которая указана напротив стиля.<br>
-                                Например, если у нас стиль 7 (<code>"style" "7"</code>) в "<code>awp_gungnir.txt</code>", то мы открываем
-                                папку "<code>custom</code>", а если стиль 5 - "<code>anodized_multi</code>".<br>
-                                2 - "<code>hydrographic</code>"<br>
-                                3 - "<code>spray</code>"<br>
-                                5 - "<code>anodized_multi</code>"<br>
-                                6 - "<code>anodized_air</code>"<br>
-                                7 - "<code>custom</code>"<br>
-                                8 - "<code>antiqued</code>"<br>
-                                9 - "<code>gunsmith</code>"
-                                </ol>
-                            </details>
-                            Там будет строчка <code>"style" "9"</code>
-                            (<a href="images/notepad_style.jpg" target="_blank" style="text-decoration: none">Screenshot</a>),
-                            наш стиль - 9, значит мы открываем папку "<code>gunsmith</code>").<br>
-                            Потом вновь открываем "<code>awp_gungnir.txt</code>" и ищем там строчку
-                            <code>"normal" "awp_gungnir_normal"</code>
-                            (<a href="images/notepad_normal.jpg" target="_blank" style="text-decoration: none">Screenshot</a>),
-                            это название файла, который нам надо найти и скопировать на рабочий стол.
-                            </li>
-                            <li>Открываем программу "<code>VTFEdit Reloaded</code>".<br>Жмём кнопку импорта
-                                (<a href="images/vtfedit_import.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
-                                Открывается диалог выбора файла для импорта, выбираем в нём текстуру с префиксом
-                                "<code>csgo_W256_H256</code>" ("<code>csgo_W512_H512</code>" либо "<code>csgo_W1024_H1024</code>"),
-                                жмём "<code>Open</code>".<br>В "<code>VTFEdit Reloaded</code>" появится окошко с настройками импорта
-                                (<a href="images/vtfedit_import_options.jpg" target="_blank" style="text-decoration: none">Screenshot</a>),
-                                выставляем что нам нужно и жмём "<code>OK</code>".<br>Жмём кнопку сохранения
-                                (<a href="images/vtfedit_save.jpg" target="_blank" style="text-decoration: none">Screenshot</a>)
-                                и сохраняем текстуру на рабочий стол с названием "<code>csgo_W256_H256</code>"
-                                ("<code>csgo_W512_H512</code>", если импортировали текстуру с префиксом "<code>csgo_W512_h512</code>"
-                                и "<code>csgo_W1024_H1024</code>", если импортировали текстуру с префиксом "<code>csgo_W1024_h1024</code>").<br>
-                                Повторяем этот шаг для второй текстуры ("<code>csgo_W2048_H2048</code>"),
-                                сохранив её с именем "<code>csgo_W2048_H2048</code>".
-                            </li>
-                            <li>Открываем папку, куда установлена "<code>CS:SO</code>".<br>В ней нам нужно открыть
-                                "<code>csso_pak_dir.vpk</code>" с помощью "<code>GCFScape</code>".<br>В "<code>GCFScape</code>" нужно открыть
-                                папку "<code>v_models</code>" по пути "<code>materials/models/weapons</code>".<br>
-                                Вытаскиваем нужную нам папку на рабочий стол.<br>Далее открываем папку "<code>w_models</code>" по пути
-                                "<code>materials/models/weapons</code>".<br>Вытаскиваем папку, которая нам нужна, на рабочий стол.
-                                <details style="background: #1b1b1b">
-                                    <summary style="color: #E09540">Какая папка нам нужна в <code>"v_models"</code></summary>
-                                    <ol>Выбор папки зависит от типа оружия, на который мы применили скин.
-                                        <details>
-                                            <summary style="color: #E09540">Pistols: <code style="color: cyan">"materials/models/weapons/v_models"</code>?</summary>
-                                            <ol>
-                                                CZ75-Auto - "<code>pist_cz_75</code>"<br>
-                                                Desert Eagle - "<code>pist_deagle</code>"<br>
-                                                Dual Berettas - "<code>pist_elite</code>"<br>
-                                                Five-SeveN - "<code>pist_fiveseven</code>"<br>
-                                                Glock-18 - "<code>pist_glock18</code>"<br>
-                                                P2000 - "<code>pist_hkp2000</code>"<br>
-                                                P250 - "<code>pist_p250</code>"<br>
-                                                R8 Revolver - "<code>pist_revolver</code>"<br>
-                                                Tec-9 - "<code>pist_tec9</code>"<br>
-                                                USP-S - "<code>pist_usp</code>""
-                                            </ol>
-                                        </details>
-                                        <details>
-                                            <summary style="color: #E09540">SMGs: <code style="color: cyan">"materials/models/weapons/v_models"</code></summary>
-                                            <ol>
-                                                MAC-10 - "<code>smg_mac10</code>"<br>
-                                                MP5-SD - "<code>smg_mp5sd</code>"<br>
-                                                MP7 - "<code>smg_mp7</code>"<br>
-                                                MP9 - "<code>smg_mp9</code>"<br>
-                                                P90 - "<code>smg_p90</code>"<br>
-                                                PP-Bizon - "<code>smg_bizon</code>"<br>
-                                                UMP-45 - "<code>smg_ump45</code>"
-                                            </ol>
-                                        </details>
-                                        <details>
-                                            <summary style="color: #E09540">Rifles: <code style="color: cyan">"materials/models/weapons/v_models"</code></summary>
-                                            <ol>
-                                                AK-47 - "<code>rif_ak47</code>"<br>
-                                                AUG - "<code>rif_aug</code>"<br>
-                                                AWP - "<code>snip_awp</code>"<br>
-                                                FAMAS - "<code>rif_famas</code>"<br>
-                                                G3SG1 - "<code>snip_g3sg1</code>"<br>
-                                                Galil AR - "<code>rif_galilar</code>"<br>
-                                                M4A1-S - "<code>rif_m4a1_silencer</code>"<br>
-                                                M4A4 - "<code>rif_m4a4</code>"<br>
-                                                SCAR-20 - "<code>snip_scar20</code>"<br>
-                                                SG 553 - "<code>rif_sg556</code>"<br>
-                                                SSG 08 - "<code>snip_ssg08</code>"
-                                            </ol>
-                                        </details>
-                                        <details>
-                                            <summary style="color: #E09540">Heavies: <code style="color: cyan">"materials/models/weapons/v_models"</code></summary>
-                                            <ol>
-                                                M249 - "<code>mach_m249para</code>"<br>
-                                                MAG-7 - "<code>shot_mag7</code>"<br>
-                                                Negev - "<code>mach_negev</code>"<br>
-                                                Nova - "<code>shot_nova</code>"<br>
-                                                Sawed-Off - "<code>shot_sawedoff</code>"<br>
-                                                XM1014 - "<code>shot_xm1014</code>"
-                                            </ol>
-                                        </details>
-                                        <details>
-                                            <summary style="color: #E09540">Knives: <code style="color: cyan">"materials/models/weapons/v_models"</code></summary>
-                                            <ol>
-                                                Bayonet - "<code>knife_bayonet</code>"<br>
-                                                Bowie Knife - "<code>knife_survival_bowie</code>"<br>
-                                                Butterfly Knife - "<code>knife_butterfly</code>"<br>
-                                                Classic Knife - "<code>knife_css</code>"<br>
-                                                Falchion Knife - "<code>knife_falchion_advanced</code>"<br>
-                                                Flip Knife - "<code>knife_flip</code>"<br>
-                                                Gut Knife - "<code>knife_gut</code>"<br>
-                                                Huntsman Knife - "<code>knife_tactical</code>"<br>
-                                                Karambit - "<code>knife_karam</code>"<br>
-                                                M9 Bayonet - "<code>knife_m9_bay</code>"<br>
-                                                Navaja Knife - "<code>knife_gypsy_jack</code>"<br>
-                                                Nomad Knife - "<code>knife_outdoor</code>"<br>
-                                                Paracord Knife - "<code>knife_cord</code>"<br>
-                                                Shadow Daggers - "<code>knife_push</code>"<br>
-                                                Skeleton Knife - "<code>knife_skeleton</code>"<br>
-                                                Stiletto Knife - "<code>knife_stiletto</code>"<br>
-                                                Survival Knife - "<code>knife_canis</code>"<br>
-                                                Talon Knife - "<code>knife_widowmaker</code>"<br>
-                                                Ursus Knife - "<code>knife_ursus</code>"
-                                            </ol>
-                                        </details>
-                                        <details>
-                                            <summary style="color: #E09540">Gloves: <code style="color: cyan">"materials/models/weapons/v_models/arms"</code></summary>
-                                            <ol>
-                                                Bloodhound Gloves - "<code>glove_bloodhound</code>"<br>
-                                                Bloodhound Perfect World Gloves - "<code>glove_bloodhound</code>"<br>
-                                                Broken Fang Gloves - "<code>glove_bloodhound</code>"<br>
-                                                Driver Gloves - "<code>glove_slick</code>"<br>
-                                                Hand Wraps - "<code>glove_handwrap_leathery</code>"<br>
-                                                Hydra Gloves - "<code>glove_bloodhound</code>"<br>
-                                                Moto Gloves - "<code>glove_motorcycle</code>"<br>
-                                                Specialist Gloves - "<code>glove_specialist</code>"<br>
-                                                Sport Gloves - "<code>glove_sporty</code>"
-                                            </ol>
-                                        </details>
-                                    </ol>
-                                </details>
-                                <details style="background: #1b1b1b;">
-                                    <summary style="color: #E09540">Какая папка нам нужна в <code>"w_models"</code>?</summary>
-                                    <ol>Выбор папки зависит от типа оружия, на который мы применили скин.
-                                        <details>
-                                            <summary style="color: #E09540">Pistols: <code style="color: cyan">"materials/models/weapons/w_models"</code></summary>
-                                            <ol>
-                                                CZ75-Auto - "<code>w_pist_cz_75</code>"<br>
-                                                Desert Eagle - "<code>w_pist_deagle</code>"<br>
-                                                Dual Berettas - "<code>w_pist_elite</code>"<br>
-                                                Five-SeveN - "<code>w_pist_fiveseven</code>"<br>
-                                                Glock-18 - "<code>w_pist_glock18</code>"<br>
-                                                P2000 - "<code>w_pist_hkp2000</code>"<br>
-                                                P250 - "<code>w_pist_p250</code>"<br>
-                                                R8 Revolver - "<code>w_pist_revolver</code>"<br>
-                                                Tec-9 - "<code>w_pist_tec9</code>"<br>
-                                                USP-S - "<code>w_pist_usp</code>""
-                                            </ol>
-                                        </details>
-                                        <details>
-                                            <summary style="color: #E09540">SMGs: <code style="color: cyan">"materials/models/weapons/w_models"</code></summary>
-                                            <ol>
-                                                MAC-10 - "<code>w_smg_mac10</code>"<br>
-                                                MP5-SD - "<code>w_smg_mp5sd</code>"<br>
-                                                MP7 - "<code>w_smg_mp7</code>"<br>
-                                                MP9 - "<code>w_smg_mp9</code>"<br>
-                                                P90 - "<code>w_smg_p90</code>"<br>
-                                                PP-Bizon - "<code>w_smg_bizon</code>"<br>
-                                                UMP-45 - "<code>w_smg_ump45</code>"
-                                            </ol>
-                                        </details>
-                                        <details>
-                                            <summary style="color: #E09540">Rifles: <code style="color: cyan">"materials/models/weapons/w_models"</code></summary>
-                                            <ol>
-                                                AK-47 - "<code>w_rif_ak47</code>"<br>
-                                                AUG - "<code>w_rif_aug</code>"<br>
-                                                AWP - "<code>w_snip_awp</code>"<br>
-                                                FAMAS - "<code>w_rif_famas</code>"<br>
-                                                G3SG1 - "<code>w_snip_g3sg1</code>"<br>
-                                                Galil AR - "<code>w_rif_galilar</code>"<br>
-                                                M4A1-S - "<code>w_rif_m4a1_silencer</code>"<br>
-                                                M4A4 - "<code>w_rif_m4a4</code>"<br>
-                                                SCAR-20 - "<code>w_snip_scar20</code>"<br>
-                                                SG 553 - "<code>w_rif_sg556</code>"<br>
-                                                SSG 08 - "<code>w_snip_ssg08</code>"
-                                            </ol>
-                                        </details>
-                                        <details>
-                                            <summary style="color: #E09540">Heavies: <code style="color: cyan">"materials/models/weapons/w_models"</code></summary>
-                                            <ol>
-                                                M249 - "<code>w_mach_m249para</code>"<br>
-                                                MAG-7 - "<code>w_shot_mag7</code>"<br>
-                                                Negev - "<code>w_mach_negev</code>"<br>
-                                                Nova - "<code>w_shot_nova</code>"<br>
-                                                Sawed-Off - "<code>w_shot_sawedoff</code>"<br>
-                                                XM1014 - "<code>w_shot_xm1014</code>"
-                                            </ol>
-                                        </details>
-                                        <details>
-                                            <summary style="color: #E09540">Knives: <code style="color: cyan">"materials/models/weapons/w_models"</code></summary>
-                                            <ol>
-                                                Bayonet - "<code>w_knife_bayonet</code>"<br>
-                                                Bowie Knife - "<code>w_knife_survival_bowie</code>"<br>
-                                                Butterfly Knife - "<code>w_knife_butterfly</code>"<br>
-                                                Classic Knife - "<code>w_knife_css</code>"<br>
-                                                Falchion Knife - "<code>w_knife_falchion_advanced</code>"<br>
-                                                Flip Knife - "<code>w_knife_flip</code>"<br>
-                                                Gut Knife - "<code>w_knife_gut</code>"<br>
-                                                Huntsman Knife - "<code>w_knife_tactical</code>"<br>
-                                                Karambit - "<code>w_knife_karam</code>"<br>
-                                                M9 Bayonet - "<code>w_knife_m9_bay</code>"<br>
-                                                Navaja Knife - "<code>w_knife_gypsy_jack</code>"<br>
-                                                Nomad Knife - "<code>w_knife_outdoor</code>"<br>
-                                                Paracord Knife - "<code>w_knife_cord</code>"<br>
-                                                Shadow Daggers - "<code>w_knife_push</code>"<br>
-                                                Skeleton Knife - "<code>w_knife_skeleton</code>"<br>
-                                                Stiletto Knife - "<code>w_knife_stiletto</code>"<br>
-                                                Survival Knife - "<code>w_knife_canis</code>"<br>
-                                                Talon Knife - "<code>w_knife_widowmaker</code>"<br>
-                                                Ursus Knife - "<code>w_knife_ursus</code>"
-                                            </ol>
-                                        </details>
-                                    </ol>
-                                </details>
-                            </li>
-                            <li>
-                                Открываем папку "<code>custom</code>" в папке <code>CS:SO</code>.<br>
-                                Создаём в ней папку с любым названием, например "<code>awp_gungnir</code>".<br>
-                                Открываем её.<br>
-                                Создаём в ней папку "<code>materials</code>", в ней создаём папку "<code>models</code>",
-                                в ней создаём папку "<code>weapons</code>", открываем её. В этой папке создаём папки
-                                "<code>v_models</code>" и "<code>w_models</code>"
-                                (<a href="images/notepad_normal.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
-                                В папку "<code>v_models</code>" мы кладём папку "<code>snip_awp</code>", которую мы достали из папки
-                                "<code>v_models</code>" в "<code>csso_pak_dir.vpk</code>" по пути "<code>materials/models/weapons</code>".<br>
-                                В папку "<code>w_models</code>" мы кладём папку "<code>w_snip_awp</code>", которую мы достали из папки
-                                "<code>w_models</code>" в "<code>csso_pak_dir.vpk</code>" по пути "<code>materials/models/weapons</code>".<br>
-                                Попутно можно удалить все файлы <code>.vtf</code>, так как они нам не понадобятся,
-                                в папке "<code>w_models</code>" в созданной тобою папке "<code>awp_gungnir</code>",
-                                находящейся в "<code>custom</code>".<br>
-                                Далее идём в папку "<code>v_models</code>", в ней открываем папку "<code>snip_awp</code>", а в ней
-                                открываем файл "<code>awp.vmt</code>" через любой текстовый редактор.<br>
-                                В нём нам надо удалить все строчки, начинающиеся с "<code>$envmap</code>"
-                                (<a href="images/vmt_notepad.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).
-                                На рабочем столе у нас лежат сконвертированные текстуры <code>.vtf</code> из 12 шага, а также
-                                текстура нормали "<code>awp_gungnir_normal</code>, которую мы вытащили в 11 шаге.<br>
-                                Мы их копируем в папку "<code>snip_awp</code>" в папке "<code>v_models</code>".<br>
-                                Потом мы удаляем <code>.vtf</code> файлы, которые изначально были в папке "<code>snip_awp</code>"
-                                (<a href="images/explorer_delete.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
-                                В <code>.vmt</code> файле нашего оружия есть строки
-                                <code>"$basetexture" "models\weapons\v_models\snip_awp\awp"</code> и
-                                <code>"$phongexponenttexture" "models\weapons\v_models\snip_awp\awp_exponent"</code>
-                                (<a href="images/notepad_textures.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
-                                Нам нужно заменить "<code>awp</code>" в строке "<code>$basetexture</code>" на
-                                "<code>csgo_W2048_H2048</code>", а также заменить "<code>awp_exponent</code>" в строке
-                                "<code>$phongexponenttexture</code>" на "<code>csgo_W256_H256</code>" ("<code>csgo_W512_H512</code>"
-                                либо "<code>csgo_W1024_H1024</code>", в зависимости от того, что мы экспортировали из <code>CS:GO</code>).<br>
-                                Также в "<code>awp_gungnir.txt</code>" у нас есть пара параметров, которые нам тоже нужно переписать
-                                в наш <code>.vmt</code> файл.<br>
-                                Среди них <code>"pearlescent" "0.500000"</code>, <code>"phongalbedoboost" "195"</code>
-                                и <code>"normal" "awp_gungnir_normal"</code>
-                                (<a href="images/txt_parameters.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
-                                Их нужно перенести в наш "<code>awp.vmt</code>" файл, написав заместо
-                                <code>"normal" "awp_gungnir_normal"</code>
-                                <code>"bumpmap" "models\weapons\v_models\snip_awp\awp_gungnir_normal"</code>.<br>
-                                ("<code>models\weapons\v_models\snip_awp\</code>" мы взяли из
-                                <code>"$basetexture" "</code>
-                                <code style="color: magenta">models\weapons\v_models\snip_awp\</code><code>csgo_W2048_H2048"</code>,
-                                заменив в скопированном пути "<code>csgo_W2048_H2048</code>" на название карты нормалей
-                                ("<code>awp_gungnir_normal</code>"), которую мы вытащили из "<code>pak01_dir.vpk</code>").
-                                <a href="images/vmt_edited.jpg" target="_blank" style="text-decoration: none">Screenshot</a><br>
-                                <details style="background: #1b1b1b">
-                                    <summary style="color: #E09540">Важно!</summary>
-                                    <ol>
-                                        <details>
-                                            <summary style="color: #E09540">Параметры для переноса из <code>.txt</code>
-                                            в <code>.vmt</code></summary>
-                                            <ol>
-                                                Перенося параметры из <code>.txt</code> в наш <code>.vmt</code> файл
-                                                    нужно добавлять к каждому параметру префикс "<code style="color: pink">$</code>".<br>
-                                                Например, заместо "<code>pearlescent</code>" получится
-                                                "<code style="color: pink">$</code><code>pearlescent</code>".<br>
-                                                Заместо "<code>normal</code>" получится
-                                                "<code style="color: pink">$</code><code>bumpmap</code>".<br>
-                                                Заместо "<code>phongalbedoboost</code>" получится
-                                                "<code style="color: pink">$</code><code>phongalbedoboost</code>".<br><br>
-                                                "<code>pearlescent</code>" - Переносим в наш <code>.vmt</code> файл всегда, кроме
-                                                случаев, когда значение "<code>pearlescent</code>" равно 0.<br>
-                                                "<code>normal</code>" - переносим всегда, заменяя "<code>normal</code>" на
-                                                "<code>bumpmap</code>"
-                                                "<code>phongalbedoboost</code>" - Переносим только, если:<br>
-                                                1) Значение "<code>phongalbedoboost</code>" в <code>.txt</code> файле
-                                                    (или "<code>items_game.txt</code>") больше изначального значения
-                                                    "<code>phongalbedoboost</code>" из нашего <code>.vmt</code> файла.
-                                                    (Например, в <code>.txt</code> файле значение "<code>phongalbedoboost</code>"
-                                                    равно 45, а изначальное значение "<code>phongalbedoboost</code>" в
-                                                    <code>.vmt</code> файле равно 30, то мы меняем значение
-                                                    "<code>phongalbedoboost</code>" в <code>.vmt</code> файле на 45, таким образом
-                                                    получаем "<code>phongalbedoboost 45</code>".
-                                                    <br>
-                                                    Если же изначальное значение "<code>phongalbedoboost</code>"
-                                                    в <code>.vmt</code> файле меньше или равно значения из <code>.txt</code> файла
-                                                    (или "<code>items_game.txt</code>"), то мы оставляем значение
-                                                    "<code>phongalbedoboost</code>" в <code>.vmt</code> файле нетронутым.<br>
-                                                2) Если в <code>.vmt</code> файле изначально отсутствует строчка
-                                                "<code>phongalbedoboost</code>", то мы добавляем её в наш <code>.vmt</code>
-                                                файл и добавляем к ней значение из <code>.txt</code> файла. (Например,
-                                                в <code>.vmt</code> файле не было строки "<code>phongalbedoboost</code>", а в
-                                                нашем <code>.txt</code> файле (или "<code>items_game.txt</code>") есть
-                                                строчка "<code>phongalbedoboost 80</code>", тогда мы добавляем в наш <code>.vmt</code>
-                                                файл "<code>phongalbedoboost 80</code>").<br>
-                                            </ol>
-                                        </details>
-                                    </ol>
-                                </details>
-                            </li>
-                            <li>
-                                Сохраняем получившийся <code>awp.vmt</code> файл, копируем его в папку "<code>w_snip_awp</code>"
-                                в папке "<code>w_models</code>" с заменой.
-                            </li>
-                            <li>
-                                Проверяем скин в игре.
-                            </li>
+                            При переносе параметров <code>.txt</code> шаблона в <code>.vmt</code> файл нужно добавить к каждому параметру
+                            префикс <code>$</code>.<br>Например, вместо <code>pearlescent</code> напиши </code><code>$pearlescent</code>,
+                            вместо <code>normal</code> - <code>$bumpmap</code>, вместо <code>phongalbedoboost</code> -
+                            <code>$phongalbedoboost</code>.<br><br>Параметр <code>pearlescent</code> добавляй в <code>.vmt</code>
+                            файл всегда, кроме случаев, когда его значение равно 0. Параметр <code>normal</code> переносится всегда
+                            (кроме случаев, когда значение <code>use_normal</code> в <code>.txt</code> шаблоне равно 0), но заменяется на
+                            <code>$bumpmap</code>. В случае с <code>phongalbedoboost</code> - переноси только тогда, когда:<br>
+                            1) Значение <code>phongalbedoboost</code> в <code>.txt</code> шаблоне (или <code>items_game.txt</code>)
+                                больше изначального значения из <code>.vmt</code> файла.<br>Например, в <code>.txt</code> шаблоне
+                                <code>phongalbedoboost</code> равен 45, а в <code>.vmt</code> он изначально равен 30, то замени значение в
+                                <code>.vmt</code> на <code>$phongalbedoboost 45</code>. Если же изначальное значение в <code>.vmt</code>
+                                больше или равно значения из <code>.txt</code> шаблона (или <code>items_game.txt</code>), то оставь значение
+                                <code>phongalbedoboost</code> в <code>.vmt</code> нетронутым.<br>
+                            2) Если в <code>.vmt</code> файле изначально нет строки <code>phongalbedoboost</code>, то добавь её в
+                                <code>.vmt</code> файл со значением из <code>.txt</code> шаблона.<br>Например, если в <code>.vmt</code> файле
+                                нет строки <code>phongalbedoboost</code>, а в <code>.txt</code> шаблоне (или <code>items_game.txt</code>) есть
+                                строка <code>phongalbedoboost 80</code>, то добавь её в <code>.vmt</code> файл, получив строку
+                                <code>$phongalbedoboost 80</code>.
                         </ol>
                     </details>
-                    <details>
-                        <summary>Способ 2: <code>RevEmu Inventory Creator</code></summary>
-                        <ul>
-                            <li style="color: #03C03C">Присутствует возможность выбрать конкретный числовой паттерн.
-                            </li>
-                            <li style="color: #03C03C">Присутствует возможность экспорта сгенерированных игрой иконок
-                                VGUI
-                                ножей и перчаток из инвентаря.</li>
-                            <li style="color: #03C03C">Присутствует возможность экспорта скинов на ножи и перчатки.
-                            </li>
-                            <li style="color: #BF4F51">Отсутствует возможность добавлять скины через ссылку для осмотра
-                                (есть метод, как это исправить).</li>
-                        </ul>
-                        <p>Инструкция: скачай <a
-                                href="https://drive.google.com/file/d/1h3RoCudgl07Ga4yD1ShRRldvPJCm0tYf"
-                                target="_blank">RevEmu Inventory Creator</a>.</p>
+                </details>
+            12) Сохрани <code>awp.vmt</code>. Скопируй его в папку
+                <div class="block">
+                    <div class="folder-icon"><img src="svg/folder.svg" style="width: 15px;transform: translate(-1px,2px);"></div>
+                    <div class="folder-text">materials/models/weapons/w_models/w_snip_awp</div>
+                </div> с заменой.<br>
+            13) Проверь работоспособность в игре.
+            <summary><h3>Способ 2:
+                <div class="block">
+                    <div class="text"
+                    style="color: #2d3136;font-size: 17px;background: #e0e0e0;padding-top: 3px;height: 20px">
+                    <img src="icons/ric.ico" style="width: 15px;transform: translate(0,2px);
+                    pointer-events: none;user-select: none;"> RevEmu Inventory Creator</div>
+                </div></h3></summary>
+            <li style="color: #03C03C; font-weight: 900;">Присутствует возможность выбрать конкретный числовой паттерн.
+            </li>
+            <li style="color: #03C03C; font-weight: 900;">Присутствует возможность экспорта сгенерированных игрой иконок
+                VGUI ножей и перчаток из инвентаря.</li>
+            <li style="color: #03C03C; font-weight: 900;">Присутствует возможность экспорта скинов на ножи и перчатки.
+            </li>
+            <li style="color: #BF4F51; font-weight: 900;">Отсутствует возможность добавлять скины через ссылку для осмотра
+                (есть метод, как это исправить).</li>
+            <h3 style="text-decoration: underline;">Рекомендуется сначала попробовать вытащить скин с помощью первого способа, и лишь потом
+            использовать второй способ.</h3>
+            1) Скачай <a href="https://drive.google.com/file/d/1h3RoCudgl07Ga4yD1ShRRldvPJCm0tYf" target="_blank">RevEmu Inventory
+                Creator</a>. Распакуй в любое удобное место.<br>
+            2) Запусти
+            <div class="block">
+                <div class="text" style="color: #2d3136;background: #e0e0e0;"><img src="icons/ric.ico"
+                style="width: 15px;transform: translate(0,2px);
+                pointer-events: none;user-select: none;"> RevEmu Inventory Creator</div>
+            </div>. При первом запуске появится такое окошко, нажми <code>OK</code>
+                (<a class="screenshot" href="images/ric_first_launch.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+                После появится ещё окно, где нужно указать, где находится <code>csgo.exe</code>
+                (<a class="screenshot" href="images/ric_browse.jpg" target="_blank" style="text-decoration: none">Screenshot</a>). Нажми
+                <code>Browse</code>, выбери <code>csgo.exe</code>, нажми <code>Open</code>. После нажми <code>Start</code> в программе
+                <div class="block">
+                    <div class="text" style="color: #2d3136;background: #e0e0e0;"><img src="icons/ric.ico"
+                    style="width: 15px;transform: translate(0,2px);
+                    pointer-events: none;user-select: none;"> RevEmu Inventory Creator</div>
+                </div>.<br>
+            3) Откроется главное окошко программы
+                (<a class="screenshot" href="images/RIC.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).
+                <details style="background-color: #2b2b2b; border-radius: 10px;padding-bottom: 1px;">
+                    <summary>Как добавлять скины</summary>
+                    <details style="background: #101010;border-radius: 10px;margin-right: 5px;padding-bottom: 1px;;margin-bottom: 5px;">
+                        <summary>На оружие</summary>
+                        <ol>
+                            1) Открой вкладку <code>More</code>, нажми <code>Read Old Inventory</code>
+                                (<a class="screenshot" href="images/ric_more.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).
+                                Выбери <code>items_730.bin</code> в папке
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">platform</div>
+                                </div> в папке установки
+                                <div class="block">
+                                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> CS:GO</div>
+                                </div> (<a class="screenshot" href="images/ric_items_pick.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).<br>
+                            2) Нажми <code>Clear Inventory Icon Cache</code> и <code>Remove All Items</code>.<br>
+                                Первое очищает кэш сгенерированных
+                                <div class="block">
+                                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> CS:GO</div>
+                                </div> иконок в инвентаре (поможет исправить
+                                <a href="images/csgo_ric_bugs.jpg" target="_blank" style="text-decoration: none">баг</a>
+                                с генерацией иконок VGUI), второе - убирает весь тот
+                                массивный список скинов из инвентаря, которые есть там изначально.<br>
+                            3) Переключись на вкладку <code>Main</code>.<br>
+                            4) В выпадающем списке напротив <code>Weapon</code> выбери нужное оружие
+                                (<a class="screenshot" href="images/ric_weapon.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).<br>
+                            5) Напротив <code>Paint Kit</code> выбери нужный скин
+                                (<a class="screenshot" href="images/ric_paint_kit.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).<br>
+                            6) Напротив <code>Pattern</code> можно ввести нужный числовой паттерн, напротив
+                                <code>Float</code> можно ввести нужный числовой износ текстуры
+                                (<a class="screenshot" href="images/ric_pattern_float.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).<br>
+                            7) Нажми <code>Add To Inventory</code>
+                                (<a class="screenshot" href="images/ric_add_to_inventory.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).<br>
+                            8) Нажми <code>RevEmu</code>
+                                (<a class="screenshot" href="images/ric_revemu.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).<br>
+                            9) Можно запускать
+                                <div class="block">
+                                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> CS:GO</div>
+                                </div>, загружаться на карту и вытаскивать нужный скин.<br>
+                            10) Придерживаясь первого способа, создай оставшиеся папки
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">materials/models/weapons/v_models</div>
+                                </div> и
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">materials/models/weapons/w_models</div>
+                                </div>, скопируй в них все необходимые текстуры и измени <code>.vmt</code>, если это необходимо.<br>
+                            11) Проверь работоспособность скина в игре.
+                        </ol>
                     </details>
-                </section>
-            </main>
-        </div>
-    </div>
+                    <details style="background: #101010;border-radius: 10px;margin-right: 5px;padding-bottom: 1px;margin-bottom: 5px;">
+                        <summary>На нож</summary>
+                        <ol>
+                            1) Открой вкладку <code>More</code>, нажми <code>Read Old Inventory</code>
+                                (<a class="screenshot" href="images/ric_more.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).
+                                Выбери <code>items_730.bin</code> в папке
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">platform</div>
+                                </div> в папке установки
+                                <div class="block">
+                                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> CS:GO</div>
+                                </div> (<a class="screenshot" href="images/ric_items_pick.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).<br>
+                            2) Нажми <code>Clear Inventory Icon Cache</code> и <code>Remove All Items</code>.<br>
+                                Первое очищает кэш сгенерированных
+                                <div class="block">
+                                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> CS:GO</div>
+                                </div> иконок в инвентаре (поможет исправить
+                                <a href="images/csgo_ric_bugs.jpg" target="_blank" style="text-decoration: none">баг</a>
+                                с генерацией иконок VGUI), второе - убирает весь тот
+                                массивный список скинов из инвентаря, которые есть там изначально.<br>
+                            3) Переключись на вкладку <code>Main</code>.<br>
+                            4) В выпадающем списке напротив <code>Weapon</code> выбери нужный нож
+                                (<a class="screenshot" href="images/ric_weapon_knife.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).<br>
+                            5) Напротив <code>Paint Kit</code> выбери нужный скин
+                                (<a class="screenshot" href="images/ric_paint_kit_knife.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).<br>
+                            6) Напротив <code>Pattern</code> можно ввести нужный числовой паттерн, напротив
+                                <code>Float</code> можно ввести нужный числовой износ текстуры
+                                (<a class="screenshot" href="images/ric_pattern_float_knife.jpg"
+                                target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+                            7) Нажми <code>Add To Inventory</code>
+                                (<a class="screenshot" href="images/ric_revemu_knife.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).<br>
+                            8) Нажми <code>RevEmu</code>
+                                (<a class="screenshot" href="images/ric_revemu.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).<br>
+                            9) Запусти
+                            <div class="block">
+                                <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                                style="width: 15px;transform: translate(0,2px);
+                                pointer-events: none;user-select: none;"> CS:GO</div>
+                            </div>, открой инвентарь.<br>Нажимай клавишу
+                            <code>Back</code>/<code>Next</code> до тех пор, пока иконка скина в инвентаре не станет полностью зелёной.
+                            Нажми <code>Save</code>.<br>
+                            10) Открой
+                                <div class="block">
+                                    <div class="text" style="color: #50cdff;"><img src="icons/vtfedit.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> VTFEdit Reloaded</div>
+                                </div>, нажми <code>Import</code>.<br>Выбери иконку инвентаря
+                                в формате <code>.tga</code>, которую ты экспортировал ранее, нажми <code>Open</code>.
+                                Убери галочку с <code>Generate Mipmaps</code> в параметрах импорта
+                                (<a class="screenshot" href="images/vtfedit_mipmaps.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).<br>
+                                Сохрани на рабочий стол с любым названием, например <code>knife.vtf</code>.<br>
+                            11) Открой <code>csso_pak_dir.vpk</code> в папке
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">csso</div>
+                                </div> через
+                                <div class="block">
+                                    <div class="text" style="color: #4337c2;"><img src="icons/gcfscape.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> GCFScape</div>
+                                </div>, открой папку
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">materials/vgui/knives</div>
+                                </div>. Скопируй название нужного тебе <code>.vtf</code> файла.
+                                <details style="background-color: #2b2b2b; border-radius: 10px;margin-right: 20px;">
+                                    <summary>Какие файлы тебе нужны в папке
+                                        <div class="block">
+                                            <div class="folder-icon"><img src="svg/folder.svg"
+                                                style="width: 15px;transform: translate(-1px,2px);"></div>
+                                            <div class="folder-text">materials/vgui/knives</div>
+                                        </div>
+                                    </summary>
+                                    Bayonet - <code>weapon_knife_bayonet</code><br>
+                                    Bowie Knife - <code>weapon_knife_survival_bowie</code><br>
+                                    Butterfly Knife - <code>weapon_knife_butterfly</code><br>
+                                    Classic Knife - <code>weapon_knife_css</code><br>
+                                    Falchion Knife - <code>weapon_knife_falchion_advanced</code><br>
+                                    Flip Knife - <code>weapon_knife_flip</code><br>
+                                    Gut Knife - <code>weapon_knife_gut</code><br>
+                                    Huntsman Knife - <code>weapon_knife_tactical</code><br>
+                                    Karambit - <code>weapon_knife_karambit</code><br>
+                                    M9 Bayonet - <code>weapon_knife_m9_bayonet</code><br>
+                                    Navaja Knife - <code>weapon_knife_gypsy_jack</code><br>
+                                    Nomad Knife - <code>weapon_knife_outdoor</code><br>
+                                    Paracord Knife - <code>weapon_knife_cord</code><br>
+                                    Shadow Daggers - <code>weapon_knife_push</code><br>
+                                    Skeleton Knife - <code>weapon_knife_skeleton</code><br>
+                                    Stiletto Knife - <code>weapon_knife_stiletto</code><br>
+                                    Survival Knife - <code>weapon_knife_canis</code><br>
+                                    Talon Knife - <code>weapon_knife_widowmaker</code><br>
+                                    Ursus Knife - <code>weapon_knife_ursus</code>
+                                </details>
+                            12) Открой папку
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">csso/custom</div>
+                                </div>, создай в ней папку с любым названием, например
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">m9_fade</div>
+                                </div>.<br>
+                                Создай в ней папку
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">materials/vgui/knives</div>
+                                </div>, скопируй в неё <code>knife.vtf</code> из 10 шага,
+                                переименуй его на нужное тебе название из 11 шага.<br>
+                                Например, если ты экспортировал из
+                                <div class="block">
+                                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> CS:GO</div>
+                                </div> скин <code>★ M9 Bayonet | Fade</code>,
+                                то тебе нужно переименовать <code>knife.vtf</code> в папке
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">materials/vgui/knives</div>
+                                </div> на <code>weapon_knife_m9_bayonet.vtf</code>.<br>
+                            13) Придерживаясь первого способа, создай оставшиеся папки
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">materials/models/weapons/v_models</div>
+                                </div> и
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">materials/models/weapons/w_models</div>
+                                </div>, скопируй в них все необходимые текстуры и измени <code>.vmt</code>, если это необходимо.<br>
+                            14) Проверь работоспособность ножа в игре.
+                        </ol>
+                    </details>
+                    <details style="background: #101010;border-radius: 10px;margin-right: 5px;padding-bottom: 1px;margin-bottom: 5px;">
+                        <summary>На перчатки</summary>
+                        <ol>
+                            1) Открой вкладку <code>More</code>, нажми <code>Read Old Inventory</code>
+                                (<a class="screenshot" href="images/ric_more.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).
+                                Выбери <code>items_730.bin</code> в папке
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">platform</div>
+                                </div> в папке установки
+                                <div class="block">
+                                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> CS:GO</div>
+                                </div> (<a class="screenshot" href="images/ric_items_pick.jpg"
+                                target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+                            2) Нажми <code>Clear Inventory Icon Cache</code> и <code>Remove All Items</code>.<br>
+                                Первое очищает кэш сгенерированных
+                                <div class="block">
+                                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> CS:GO</div>
+                                </div> иконок в инвентаре (поможет исправить
+                                <a class="screenshot" href="images/csgo_ric_bugs.jpg" target="_blank" style="text-decoration: none">баг</a>
+                                с генерацией иконок VGUI), второе - убирает весь тот
+                                массивный список скинов из инвентаря, которые есть там изначально.<br>
+                            3) В выпадающем списке напротив <code>Glove</code> выбери нужный скин на перчатки,
+                            нажми <code>Add</code> (<a class="screenshot" href="images/ric_glove_add.jpg" target="_blank"
+                            style="text-decoration: none">Screenshot</a>).<br>
+                            4) Переключись на вкладку <code>Main</code>, нажми <code>RevEmu</code>
+                                (<a class="screenshot" href="images/ric_glove_save.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).<br>
+                            5) Запусти
+                                <div class="block">
+                                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> CS:GO</div>
+                                </div> , открой инвентарь.<br>Нажимай клавишу <code>Back</code>/<code>Next</code>
+                                до тех пор, пока иконка скина в инвентаре не станет полностью зелёной. Нажми <code>Save</code>.
+                                Осмотри скин на перчатки в инвентаре.<br>Нажимай <code>Back</code>/<code>Next</code> до тех пор, пока
+                                левая либо правая перчатка не станет зелёной
+                                (<a class="screenshot" href="images/glove_left_tex.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>),
+                                нажми <code>Save</code>. Для удобства переименовывай каждую текстуру в формате <code>.tga</code>,
+                                чтобы не запутаться. Например, если ты сохранил текстуру левой перчатки, когда она стала зелёной,
+                                то переименуй появившийся <code>.tga</code> файл на <code>left_tx.tga</code>.<br>
+                                Нажимай <code>Back</code>/<code>Next</code> до тех пор, пока левая перчатка слегка не потемнеет
+                                (<a class="screenshot" href="images/glove_left_nm.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>),
+                                нажми <code>Save</code>. Переименуй появившуюся текстуру на <code>left_nm.tga</code>.<br>
+                                Нажимай <code>Back</code>/<code>Next</code> до тех пор, пока левая перчатка полностью не станет чёрной
+                                (<a class="screenshot" href="images/glove_left_exp.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>),
+                                нажми <code>Save</code>. Переименуй появившуюся текстуру на <code>left_masks.tga</code>.<br>
+                                Повтори то же самое для правой перчатки.<br>
+                            6) Открой
+                                <div class="block">
+                                    <div class="text" style="color: #50cdff;"><img src="icons/vtfedit.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> VTFEdit Reloaded</div>
+                                </div>, нажми <code>Import</code>.<br>Выбери иконку инвентаря
+                                в формате <code>.tga</code>, которую ты экспортировал ранее, нажми <code>Open</code>.
+                                Убери галочку с <code>Generate Mipmaps</code> в параметрах импорта
+                                (<a class="screenshot" href="images/vtfedit_mipmaps.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).<br>
+                                Сохрани на рабочий стол с любым названием, например <code>glove.vtf</code>.<br>
+                                Повтори то же самое для остальных <code>.tga</code> файлов
+                                (<code>left_tx.tga</code>, <code>left_nm.tga</code>...), но при их импорте обязательно поставь галочку
+                                возле <code>Generate Mipmaps</code>. Сохраняй каждую получившуюся текстуру на рабочий стол
+                                с тем же именем, что у неё изначально было.<br>
+                                Например, ты импортировал <code>left_tx.tga</code>, тогда тебе нужно сохранить его как <code>left_tx.vtf</code>
+                                на рабочий стол.<br>
+                            7) Открой папку
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">csso/custom</div>
+                                </div>, создай в ней папку с любым названием, например
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">specialist_fade</div>
+                                </div>.<br>
+                                Создай в ней папку
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">materials/vgui/gloves</div>
+                                </div>, скопируй в неё <code>glove.vtf</code> из 6 шага,
+                                переименуй его на нужное тебе название.<br>
+                                <details style="background-color: #2b2b2b; border-radius: 10px;padding-bottom: 1px;margin-right: 20px;">
+                                    <summary>Откуда брать название</summary>
+                                    Открой <code>csso_pak_dir.vpk</code> в папке
+                                    <div class="block">
+                                        <div class="folder-icon"><img src="svg/folder.svg"
+                                            style="width: 15px;transform: translate(-1px,2px);"></div>
+                                        <div class="folder-text">csso</div>
+                                    </div> через
+                                    <div class="block">
+                                        <div class="text" style="color: #4337c2;"><img src="icons/gcfscape.ico"
+                                        style="width: 15px;transform: translate(0,2px);
+                                        pointer-events: none;user-select: none;"> GCFScape</div>
+                                    </div>, открой папку
+                                    <div class="block">
+                                        <div class="folder-icon"><img src="svg/folder.svg"
+                                            style="width: 15px;transform: translate(-1px,2px);"></div>
+                                        <div class="folder-text">materials/vgui/gloves</div>
+                                    </div>.<br>Скопируй нужное тебе название.<br><br>
+                                    Bloodhound Gloves - <code>glove_bloodhound</code><br>
+                                    Bloodhound Perfect World Gloves - <code>glove_bloodhound_perfectworld</code><br>
+                                    Broken Fang Gloves - <code>glove_bloodhound_brokenfang</code><br>
+                                    Driver Gloves - <code>glove_slick</code><br>
+                                    Hand Wraps - <code>glove_handwrap_leathery</code><br>
+                                    Hydra Gloves - <code>glove_bloodhound_hydra</code><br>
+                                    Moto Gloves - <code>glove_motorcycle</code><br>
+                                    Specialist Gloves - <code>glove_specialist</code><br>
+                                    Sport Gloves - <code>glove_sporty</code><br>
+                                </details>
+                                Например, если ты экспортировал из
+                                <div class="block">
+                                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> CS:GO</div>
+                                </div> скин <code>★ Specialist Gloves | Fade</code>,
+                                то тебе нужно переименовать <code>glove.vtf</code> в папке
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">materials/vgui/gloves</div>
+                                </div> на <code>glove_specialist.vtf</code>.<br>
+                            8) Открой <code>csso_pak_dir.vpk</code> в папке установки
+                                <div class="block">
+                                    <div class="text" style="color: #f2ca3e;"><img src="icons/csso.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> CS:SO</div>
+                                </div> с помощью
+                                <div class="block">
+                                    <div class="text" style="color: #4337c2;"><img src="icons/gcfscape.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> GCFScape</div>
+                                </div>, перейди в папку
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/v_models/arms</div>
+                                </div>, скопируй нужную папку на рабочий стол.
+                                <details style="background-color: #2b2b2b; border-radius: 10px;margin-right: 20px;">
+                                    <summary>
+                                        Какая папка тебе нужна в
+                                        <div class="block">
+                                            <div class="folder-icon"><img src="svg/folder.svg"
+                                                style="width: 15px;transform: translate(-1px,2px);"></div>
+                                            <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/v_models/arms</div>
+                                        </div>
+                                    </summary>
+                                    С <code>Bloodhound</code> перчатками дела обстоят немного иначе.<br>
+                                    Например, ты хочешь вытащить <code>Broken Fang Gloves</code>, тогда тебе нужно открыть папку
+                                    <div class="block">
+                                        <div class="folder-icon"><img src="svg/folder.svg"
+                                            style="width: 15px;transform: translate(-1px,2px);"></div>
+                                        <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/v_models/arms</div>
+                                    </div> в <code>csso_pak_dir.vpk</code>, скопировать папку
+                                    <div class="block">
+                                        <div class="folder-icon"><img src="svg/folder.svg"
+                                            style="width: 15px;transform: translate(-1px,2px);"></div>
+                                        <div class="folder-text" style="line-height: 1.4;">glove_bloodhound</div>
+                                    </div> на рабочий стол, открыть её и удалить все <code>.vtf</code> файлы, а также
+                                    все <code>.vmt</code> файлы, кроме <code>glove_brokenfang_left.vmt</code> и
+                                    <code>glove_brokenfang_right.vmt</code>.<br>
+                                    Для других <code>Bloodhound</code> перчаток нужно оставить <code>.vmt</code>>,
+                                    которые им принадлежат.<br><br>
+                                    Bloodhound Gloves - <code>glove_bloodhound/glove_bloodhound_*.vmt</code><br>
+                                    Bloodhound Perfect World Gloves - <code>glove_bloodhound/glove_bloodhound_perfectworld_*.vmt</code><br>
+                                    Broken Fang Gloves - <code>glove_bloodhound/glove_brokenfang_*.vmt</code><br>
+                                    Driver Gloves - <code>glove_slick_*.vmt</code><br>
+                                    Hand Wraps - <code>glove_handwrap_leathery_*.vmt</code><br>
+                                    Hydra Gloves - <code>glove_bloodhound/glove_hydra_*.vmt</code><br>
+                                    Moto Gloves - <code>glove_motorcycle_*.vmt</code><br>
+                                    Specialist Gloves - <code>glove_specialist_*.vmt</code><br>
+                                    Sport Gloves - <code>glove_sporty_*.vmt</code>
+                                </details>
+                                Например, ты вытащил из
+                                <div class="block">
+                                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> CS:GO</div>
+                                </div> скин <code>★ Specialist Gloves | Fade</code>, тогда тебе надо открыть
+                                <code>csso_pak_dir.vpk</code> в папке установки
+                                <div class="block">
+                                    <div class="text" style="color: #f2ca3e;"><img src="icons/csso.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> CS:SO</div>
+                                </div>, в нём открыть папку
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text" style="line-height: 1.4;">materials/models/weapons/v_models/arms</div>
+                                </div>, скопировать папку
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text" style="line-height: 1.4;">glove_specialist</div>
+                                </div> на рабочий стол.<br>
+                            9) Открой папку
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">specialist_fade</div>
+                                </div> в папке
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">custom</div>
+                                </div>. Создай в ней папку
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">materials/models/weapons/v_models/arms</div>
+                                </div>, открой её.<br>Скопируй в неё папку
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text" style="line-height: 1.4;">glove_specialist</div>
+                                </div> с рабочего стола, открой её. Удали все <code>.vtf</code> файлы.<br>
+                            10) Скопируй в папку
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text" style="line-height: 1.4;">glove_specialist</div>
+                                </div> текстуры перчатки с рабочего стола. Открой <code>glove_specialist_left.vmt</code>.<br>
+                                В строку <code>$basetexture</code> вместо <code>glove_specialist_left_color</code>
+                                впиши имя текстуры левой перчатки (<code>left_tx</code>).<br>В строку <code>$bumpmap</code>
+                                вместо <code>glove_specialist_left_normal</code> напиши имя карты нормалей левой перчатки
+                                (<code>left_nm</code>).<br>В строку <code>$masks1</code> вместо <code>glove_specialist_masks1</code>
+                                впиши название маски левой перчатки (<code>left_masks</code>).(<a class="screenshot"
+                                href="images/notepad_left.jpg" target="_blank" style="text-decoration: none">Screenshot</a>).<br>
+                                Сделай то же самое для правой перчатки в <code>glove_specialist_right.vmt</code>
+                                (<a class="screenshot" href="images/notepad_right.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).<br>
+                                <details style="background-color: #2b2b2b; border-radius: 10px;margin-right: 20px;padding-bottom: 1px;">
+                                    <summary>Примечание</summary>
+                                    У всех <code>Bloodhound</code> перчаток есть строка <code>$masks2</code>, её изменять
+                                    не нужно (<a class="screenshot" href="images/notepad_masks2.jpg" target="_blank"
+                                    style="text-decoration: none">Screenshot</a>).<br>То есть изменять <code>glove_bloodhound_masks2</code>
+                                    на <code>left_masks</code> или <code>right_masks</code> не надо.
+                                </details>
+                            11) Открой <a href="https://stash.clash.gg" target="_blank">stash.clash.gg</a>.<br>
+                                Найди там свои перчатки. Скопируй значение в <code>Finish Catalog:</code>.<br>
+                                Открой <code>items_game.txt</code> в папке
+                                <div class="block">
+                                    <div class="folder-icon"><img src="svg/folder.svg"
+                                        style="width: 15px;transform: translate(-1px,2px);"></div>
+                                    <div class="folder-text">csgo/scripts/items</div>
+                                </div> в папке установки
+                                <div class="block">
+                                    <div class="text" style="color: #e9b963;"><img src="icons/csgo.ico"
+                                    style="width: 15px;transform: translate(0,2px);
+                                    pointer-events: none;user-select: none;"> CS:GO</div>
+                                </div>.<br>
+                                Найди число из <code>Finish Catalog:</code>
+                                (<a class="screenshot" href="images/notepad_finish_catalog.jpg" target="_blank"
+                                    style="text-decoration: none">Screenshot</a>).<br>
+                                Если есть строка <code>vmt_overrides</code>, то скопируй всё, что есть внутри неё
+                                (<a class="screenshot" href="images/notepad_overrides.jpg" target="_blank"
+                                    style="text-decoration: none">Screenshot</a>). В данном случае это только
+                                <code>"$phongalbedoboost" "10"</code>.<br>Вставь это в оба <code>.vmt</code> перчаток.
+                                Если в <code>.vmt</code> перчаток уже есть повторяющиеся строки, то удали их и вставь то, что скопировал
+                                из <code>items_game.txt</code>.<br>Например, у <code>Sport Gloves | Nocts</code> в <code>vmt_overrides</code>
+                                есть это (<a class="screenshot" href="images/notepad_nocts.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).
+                                После всех изменений в <code>glove_sporty_left.vmt</code> получится это
+                                (<a class="screenshot" href="images/notepad_nocts2.jpg" target="_blank"
+                                style="text-decoration: none">Screenshot</a>).<br>Важно заметить, что нужно заккоментировать
+                                <code>$masks1</code> в скопированном тексте из <code>vmt_overrides</code>.<br>
+                            12) Проверь работоспособность перчаток в игре.
+                            <!-- добавить ссылки на загрузку шаблонов перчаток чтобы не ебать
+                            мозг длинным текстом, сделать анимированный навбар
+                            сделать пару скинов в cs:so skins -->
+                        </ol>
+                    </details>
+                </details>
+            </li>
+        </section>
+    </main>
     <script src="scripts/sidebar.js"></script>
 </body>
 

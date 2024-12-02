@@ -1,24 +1,22 @@
-const toggleButton = document.querySelector('.header-open-button');
-const header = document.querySelector('header');
-const menuLinks = document.querySelectorAll('header a');
+document.addEventListener('DOMContentLoaded', () => {
+    const headerbutton = document.querySelector('.header-open-button');
+    const headermisc = document.querySelector('.header-misc');
+    const headertext = document.querySelectorAll('.header-misc a');
+    const main = document.querySelector('body');
 
-toggleButton.addEventListener('click', () => {
-    header.classList.toggle('collapsed');
-});
+    headerbutton.addEventListener('click', () => {
+        headermisc.classList.toggle('open');
+    });
 
-document.addEventListener('click', (event) => {
-    const isClickInsideHeader = header.contains(event.target);
-    const isClickOnToggle = event.target.closest('.header-open-button');
+    headertext.forEach(link => {
+        link.addEventListener('click', () => {
+            headermisc.classList.remove('open');
+        });
+    });
 
-    if (!isClickInsideHeader && !isClickOnToggle && ! header.classList.contains('collapsed')) {
-        header.classList.add('collapsed');
-    }
-});
-
-menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        setTimeout(() => {
-            header.classList.add('collapsed');
-        }, 250);
+    main.addEventListener('click', (event) => {
+        if (!headermisc.contains(event.target) && !headerbutton.contains(event.target)) {
+            headermisc.classList.remove('open');
+        }
     });
 });
